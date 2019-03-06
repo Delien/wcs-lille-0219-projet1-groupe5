@@ -1,0 +1,27 @@
+.roundedImage
+{
+    overflow:hidden;
+    -webkit-border-radius:90px;
+    -moz-border-radius:90px;
+    border-radius:90px;
+    width:180px;
+     
+ }
+
+.containerphoto
+{
+	text-align: center;
+}
+
+.photo
+{
+	display: inline;
+	padding-left: 8%;
+
+}
+
+h2
+{
+	text-align: center;
+	text-decoration: underline;
+}
