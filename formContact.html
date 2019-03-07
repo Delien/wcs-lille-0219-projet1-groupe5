@@ -3,43 +3,34 @@
   <head>
     <meta charset="utf-8">
     <title>Formulaire</title>
-    <h3>Formulaire de NEWSLETTERS ou CONTACT</h3>
   </head>
   <body>
-<h2 id="newsletter" class="newsletter_form">NEWSLETTER</h2>
-    <form action="#" method="post">
-      <div>
-        <label for="name">Name :</label>
-        <input type="text" id="name1" name="user_name1">
-      </div>
-      <div>
-        <label for="mail">Mail :</label>
-        <input type="email" id="mail1" name="user_mail1">
-      </div>
+    <h2 id="newsletter" class="newsletter_form">Newsletters</h2>
+    <form method="post" action="traitement.php">
+      <p><input type="text" name="name" id="name" class="name" placeholder="Name :" size="70" maxlength="30"></p>
+      <p><input type="text" name="mail_new" id="mail_new" class="mail_new" placeholder="Mail :" size="70" maxlength="30" /></p>
+      <input class="send_newsletter" type="button" value="SEND">
     </form>
-<h2 id="ContactUs" class="contact">Contact Us</h2>
+    <h2 id="ContactUs" class="contact">Contact Us</h2>
       <p class="contacttext"><strong>HEY !</strong><br>
         Do you want us to meet?<br>
-Would you like to share your incredible talents and share your experience?<br>
+Would you like to share your incredible talents and join one of our companies?<br>
 Would you like to learn the trade and do an internship with us?
 Or simply ask us a question?<br>
-        <strong>Contact us with this form:</strong><br></p>
-    <form action="#" method="post">
+      <strong>Contact us with this form:</strong><br></p>
       <div>
-        <label for="name">Name :</label>
-        <input type="text" id="name2" name="user_name2">
-      </div>
-      <div>
-        <label for="mail">Mail :</label>
-        <input type="email" id="mail2" name="user_mail2">
-      </div>
-      <div>
-        <label for="msg">Your message :</label>
-        <textarea id="msg" name="user_message"></textarea>
-    </div>
-      <div class="button">
-        <button type="submit">SEND</button>
-    </div>
+      <form method="post" action="traitement.php">
+        <select name="choix" id="choix">
+          <option value="...">I am ...</option>
+          <option value="...">I am an incubator</option>
+          <option value="...">I am a company</option>
+          <option value="...">I am looking for an internship</option>
+          <option value="...">I am looking for a formation</option>
+        </select> 
+        <p><input type="text" name="mail_contact" id="mail_contact" class="mail_contact" placeholder="@ :" size="70" maxlength="30" /></p>
+        <p><input type="text" name="message" id="message" class="message" placeholder="Message :" size="70" maxlength="30" /></p>
+        <input class="send_contact" type="button" value="SEND">
     </form>
+    </div>
   </body>
 </html>
