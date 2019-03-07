@@ -24,10 +24,16 @@ small a {
     color: black;
 }
 
+.euratech_img img {
+    background-size: cover;
+    width: 90%;
+}
+
 .ecosystem img {
     background-size: cover;
     width: 50%;
 }
+
 
 h2 {
     text-transform: uppercase;
