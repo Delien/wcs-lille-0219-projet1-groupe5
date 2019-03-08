@@ -161,7 +161,8 @@ h5 {
 }
 
 .Positiontext {
-	margin-bottom: 6em;
+    margin-bottom: 6em;
+    background-color: rgba(0, 0, 0, 0.45);
 }
 
 /*
