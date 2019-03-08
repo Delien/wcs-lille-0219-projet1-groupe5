@@ -130,7 +130,7 @@ Partie home
 
 
 h5 {
-	font-size: 55px;
+	font-size: 2em;
 }
 
 .roundedImage {
@@ -156,7 +156,7 @@ h5 {
   text-align: center;
   margin: auto, 5em;
   color:white;
-  font-size:2em;
+  font-size:1em;
   width:692px;      /* même largeur que l’image */
 }
 
