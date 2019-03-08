@@ -1,36 +1,82 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Formulaire</title>
+    <title>WILD - Wild Information Of the Lille's Digital  </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="cssGlobal.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8" />
   </head>
   <body>
-    <h2 id="newsletter" class="newsletter_form">Newsletters</h2>
-    <form method="post" action="traitement.php">
-      <p><input type="text" name="name" id="name" class="name" placeholder="Name :" size="70" maxlength="30"></p>
-      <p><input type="text" name="mail_new" id="mail_new" class="mail_new" placeholder="Mail :" size="70" maxlength="30" /></p>
-      <input class="send_newsletter" type="button" value="SEND">
-    </form>
-    <h2 id="ContactUs" class="contact">Contact Us</h2>
-      <p class="contacttext"><strong>HEY !</strong><br>
-        Do you want us to meet?<br>
-Would you like to share your incredible talents and join one of our companies?<br>
-Would you like to learn the trade and do an internship with us?
-Or simply ask us a question?<br>
-      <strong>Contact us with this form:</strong><br></p>
-      <div>
-      <form method="post" action="traitement.php">
-        <select name="choix" id="choix">
-          <option value="...">I am ...</option>
-          <option value="...">I am an incubator</option>
-          <option value="...">I am a company</option>
-          <option value="...">I am looking for an internship</option>
-          <option value="...">I am looking for a formation</option>
-        </select> 
-        <p><input type="text" name="mail_contact" id="mail_contact" class="mail_contact" placeholder="@ :" size="70" maxlength="30" /></p>
-        <p><input type="text" name="message" id="message" class="message" placeholder="Message :" size="70" maxlength="30" /></p>
-        <input class="send_contact" type="button" value="SEND">
-    </form>
+    <div class="container">
+      <div class="row-3">
+        <div class="col-6 offset-4">
+          <h2 class="newsletter_form">Newsletters</h2>
+        </div>
+      </div>
+      <form action="#" method="post">
+        <div class="row">
+          <input type="text" name="name" class="name" placeholder="Name :" size="70" maxlength="30"/>
+        </div>
+        <div class="row">
+          <input type="text" name="mail_new" class="mail_new" placeholder="Mail :" size="70" maxlength="30" />
+        </div>
+        <div class="row">
+          <input class="send_newsletter" type="button" value="SEND"/>
+        </div>  
+      </form>
+      <div class="row-3">
+        <div class="col-6 offset-4">
+          <h2 class="newsletter_form">Newsletters</h2>
+        </div>
+      </div>
+      <form action="#" method="post"></form>
+        <div class="row">
+          <input type="text" name="name" class="name" placeholder="Name :" size="70" maxlength="30"/>
+        </div>
+        <div class="row">
+          <input type="text" name="mail_new" class="mail_new" placeholder="Mail :" size="70" maxlength="30" />
+        </div>
+        <div class="row">
+          <input class="send_newsletter" type="button" value="SEND"/>
+        </div>
+      </form>
+      <div class="row-3">
+        <div class="col-6 offset-4">
+          <h2 id="ContactUs" class="contact">Contact Us</h2>
+        </div>
+      </div>
+      <div class="row justify-content">
+        <div class="col-5 offset-1">
+          <strong>HEY !</strong>
+          <p>
+            Do you want us to meet?
+            Would you like to share your incredible talents and join one of our companies?
+            Would you like to learn the trade and do an internship with us?
+            Or simply ask us a question?
+          </p>
+          <strong>Contact us with this form:</strong>
+        </div>
+      </div>
+      <form action="#" method="post"></form>
+        <div class="row">
+          <select name="choix" id="choix">
+            <option value="...">I am ...</option>
+            <option value="...">I am an incubator</option>
+            <option value="...">I am a company</option>
+            <option value="...">I am looking for an internship</option>
+            <option value="...">I am looking for a formation</option>
+          </select> 
+        </div>
+        <div class="row">
+            <input type="text" name="mail_contact" id="mail_contact" class="mail_contact" placeholder="@ :" size="70" maxlength="30" />
+        </div>
+        <div class="row">
+          <input type="text" name="message" id="message" class="message" placeholder="Message :" size="70" maxlength="30" />
+        </div>
+        <div class="row">
+          <input class="send_contact" type="button" value="SEND"/>
+        </div>
+      </form>
     </div>
   </body>
 </html>
