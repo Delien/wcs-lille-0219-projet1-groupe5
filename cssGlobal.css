@@ -196,3 +196,9 @@ Partie map
    text-decoration: none;
    color: grey;
 }
+
+.changeIMG {
+    background-image: url("picture/john-schnobrich.jpg");
+    background-size: cover;
+    padding: 10px;
+}
