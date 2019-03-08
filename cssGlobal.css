@@ -11,27 +11,32 @@ body {
 .tab {
     margin: 2%; 
 }
-.titreh1{
-    width: 50%;
+
+.row {
+    margin-top: 4rem;
 }
 
+.titreh1{
+    width: 50%;
+    margin-top: 1rem;
+}
 p{
     font-size : 0.75rem;
 }
- .titrepage {  
-     text-transform: uppercase;
+.titrepage {  
+    text-transform: uppercase;
     font-weight: bold;
     padding: 1rem;
-    font-size : 2.5rem;
+    font-size : 1.5rem;
     background-color: lightgray;
 }
 .header {
-    margin-top: 2.25rem;
+    margin-top: 2rem;
     margin-left: 10%;
 }
 
 .header p{
-    font-size: 1rem;
+    font-size: 0.75rem;
 }
 
 #ecosystem {
@@ -44,19 +49,21 @@ p{
     text-align : left;
     text-decoration: none;
     font-size : 0.75rem;
+    margin-top: 3rem;
 }
 
 .euratech_img img {
     background-size: cover;
-    width: 150%;
+    width: 125%;
     height: 200%;
+    margin-top: -3rem;
 }
 
 .ecosystem img {
-    width: 75%;
+    width: 55%;
 }
 
- article h2 {
+.article h2 {
     text-transform: uppercase;
 	font-size: 2rem;
     border-bottom: 0.2rem solid black;
@@ -65,19 +72,26 @@ p{
 }
 h2 {
     text-transform: uppercase;
-	font-size: 2rem;
-    border-bottom: 0.25rem solid black;
-    text-align: center ;
-    width : 50%;
+	font-size: 1rem;
+    line-height: 3rem;
+    padding-bottom: 1rem;
+}
+.subtitle {
+    border-bottom: 0.15rem solid black;
+    
 }
 .history {
-    
-    height: 18em;
+    margin-top: -3rem;
+    height: 22rem;
     overflow-y: scroll;
 }
 
 a img:hover {
     opacity : 0.3;
+}
+.our_select{
+    margin-top: 1rem;
+    margin-right: 10rem; /*LA*/
 }
 .our_select img {
     width: 100%;
@@ -96,9 +110,18 @@ a img:hover {
     margin : 2rem,0;
 }
 
-h3 {
+.our_select h3 {
     font-weight: bold;
-    font size : 0.75rem;
+    font-size : 1.2rem;
+}
+.htju {
+    font-weight: bold;
+    font-size : 1.2rem; 
+    margin-bottom: 1rem;
+}
+
+li {
+    line-height : 2rem;
 }
 /*
 Partie home
@@ -165,4 +188,9 @@ Partie map
 
 .transports {
 	float: left;
+}
+
+.footer a {
+   text-decoration: none;
+   color: grey;
 }
