@@ -5,44 +5,101 @@ Partie Commun
 body {
     font-family: 'Montserrat', sans-serif;
 }
-
+.container {
+    background-color : whitesmoke;
+}
 .tab {
     margin: 2%; 
 }
-
-.test {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 3em;
-    background-color: gray;
-    padding: 2%;
-    margin: 2%;
+.titreh1{
+    width: 50%;
 }
 
-small a {
+p{
+    font-size : 0.75rem;
+}
+ .titrepage {  
+     text-transform: uppercase;
+    font-weight: bold;
+    padding: 1rem;
+    font-size : 2.5rem;
+    background-color: lightgray;
+}
+.header {
+    margin-top: 2.25rem;
+    margin-left: 10%;
+}
+
+.header p{
+    font-size: 1rem;
+}
+
+#ecosystem {
+    padding : 1rem;
+    margin :3rem,0;
+    text-align: center;
+}
+
+#ecosystem h4{
+    text-align : left;
     text-decoration: none;
-    color: black;
+    font-size : 0.75rem;
 }
 
 .euratech_img img {
     background-size: cover;
-    width: 90%;
+    width: 150%;
+    height: 200%;
 }
 
 .ecosystem img {
-    background-size: cover;
-    width: 50%;
+    width: 75%;
 }
 
-
+ article h2 {
+    text-transform: uppercase;
+	font-size: 2rem;
+    border-bottom: 0.2rem solid black;
+    text-align: center ;
+    width: 100%;
+}
 h2 {
     text-transform: uppercase;
-	font-size: 16px;
-    border-bottom: 2px solid black;
-
-    text-align: center;
+	font-size: 2rem;
+    border-bottom: 0.25rem solid black;
+    text-align: center ;
+    width : 50%;
+}
+.history {
+    
+    height: 18em;
+    overflow-y: scroll;
 }
 
+a img:hover {
+    opacity : 0.3;
+}
+.our_select img {
+    width: 100%;
+}
+.environment img {
+    width: 90%;
+}
+
+.facilities {
+    height: 31rem;
+    widht : 80%;
+    overflow-y: scroll;
+}
+
+.map_faci{
+    margin : 2rem,0;
+}
+
+h3 {
+    font-weight: bold;
+    font size : 0.75rem;
+}
 /*
 Partie home
 */
@@ -87,7 +144,7 @@ h5 {
 Partie map
 */
 
-h3 {
+.facilities h3 {
 	font-size: 14px;
 }
 
