@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>WILD - Wild Information Of the Lille's Digital  </title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="cssGlobal.css" rel="stylesheet" type="text/css" />
-    <meta charset="utf-8" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="row-3">
+<head>
+  <title>WILD - Wild Information Of the Lille's Digital  </title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="cssGlobal.css" rel="stylesheet" type="text/css" />
+  <meta charset="utf-8" />
+</head>
+<body>
+  <div class="container">
+    <div class="change">
+      <div class="row">
         <div class="col-6 offset-4">
           <h2 class="newsletter_form">Newsletters</h2>
         </div>
@@ -22,31 +23,17 @@
         </div>
         <div class="row">
           <input class="send_newsletter" type="button" value="SEND"/>
-        </div>  
-      </form>
-      <div class="row-3">
-        <div class="col-6 offset-4">
-          <h2 class="newsletter_form">Newsletters</h2>
-        </div>
-      </div>
-      <form action="#" method="post"></form>
-        <div class="row">
-          <input type="text" name="name" class="name" placeholder="Name :" size="70" maxlength="30"/>
-        </div>
-        <div class="row">
-          <input type="text" name="mail_new" class="mail_new" placeholder="Mail :" size="70" maxlength="30" />
-        </div>
-        <div class="row">
-          <input class="send_newsletter" type="button" value="SEND"/>
         </div>
       </form>
-      <div class="row-3">
+    </div>
+    <div class="change">
+      <div class="row">
         <div class="col-6 offset-4">
           <h2 id="ContactUs" class="contact">Contact Us</h2>
         </div>
       </div>
-      <div class="row justify-content">
-        <div class="col-5 offset-1">
+      <div class="row">
+        <div class="col-6 offset-1">
           <strong>HEY !</strong>
           <p>
             Do you want us to meet?
@@ -57,7 +44,7 @@
           <strong>Contact us with this form:</strong>
         </div>
       </div>
-      <form action="#" method="post"></form>
+      <form action="#" method="post">
         <div class="row">
           <select name="choix" id="choix">
             <option value="...">I am ...</option>
@@ -68,15 +55,16 @@
           </select> 
         </div>
         <div class="row">
-            <input type="text" name="mail_contact" id="mail_contact" class="mail_contact" placeholder="@ :" size="70" maxlength="30" />
+          <input type="text" name="mail_contact" id="mail_contact" class="mail_contact" placeholder="@ :" size="70" maxlength="30" />
         </div>
         <div class="row">
-          <input type="text" name="message" id="message" class="message" placeholder="Message :" size="70" maxlength="30" />
+          <textarea name="" id="message" class="message" cols="70" rows="10"></textarea>
         </div>
         <div class="row">
           <input class="send_contact" type="button" value="SEND"/>
         </div>
       </form>
-    </div>
-  </body>
+    </div> 
+  </div>
+</body>
 </html>
