@@ -1,6 +1,7 @@
-<?php include('newsletterPost.php'); ?>
-<?php include('contactPost.php'); ?>
-
+<?php
+require 'newsletterPost.php';
+require 'contactPost.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,15 +52,15 @@
             <h6 class="newletter_title">Sign up to our Newsletter !</h6>
         </div>
       </div>
-      <form action="newsletterPost.php" method="post" class="newletter_1">
+      <form action="newsletterPost.php" method="post" id="newletter" class="newletter">
         <div class="row">
           <div class="col-9 offset-1">
             <input type="text" id="name_new" name="name_new" class="name" placeholder="Name :" size="70" maxlength="30"/>
             <?php  if(isset($errorsNews['empty_name'])) : ?>
-            <small class="form-text"><?= $errorsNews['empty_name']; ?></small>
+            <small class="form-text error"><?= $errorsNews['empty_name']; ?></small>
             <?php endif; ?>
             <?php  if(isset($errorsNews['incorrect_name'])) : ?>
-            <small class="form-text"><?= $errorsNews['incorrect_name']; ?></small>
+            <small class="form-text error"><?= $errorsNews['incorrect_name']; ?></small>
             <?php endif; ?>
           </div>
         </div>
@@ -67,16 +68,16 @@
           <div class="col-9 offset-1">
             <input type="text" id="mail_new" name="mail_new" class="mail_new" placeholder="Mail :" size="70" maxlength="30" />
             <?php  if(isset($errorsNews['empty_mail'])) : ?>
-            <small class="form-text"><?= $errorsNews['empty_mail']; ?></small>
+            <small class="form-text error"><?= $errorsNews['empty_mail']; ?></small>
             <?php endif; ?>
             <?php  if(isset($errorsNews['incorrect_mail'])) : ?>
-            <small class="form-text"><?= $errorsNews['incorrect_mail']; ?></small>
+            <small class="form-text error"><?= $errorsNews['incorrect_mail']; ?></small>
             <?php endif; ?>
           </div>
         </div>    
         <div class="row">
           <div class="col-3 offset-9">
-            <input class="send_newsletter" type="button" value="SEND"/>
+            <input type="submit" class="send_newsletter" value="SEND"/>
           </div>
         </div>
       </form>
@@ -110,7 +111,7 @@
               <option>I am looking for a formation</option>
             </select> 
             <?php  if(isset($errorsContact['empty_choice'])) : ?>
-            <small class="form-text"><?= $errorsContact['empty_choice']; ?></small>
+            <small class="form-text error"><?= $errorsContact['empty_choice']; ?></small>
             <?php endif; ?>
           </div>
         </div>
@@ -118,10 +119,10 @@
             <div class="col-9 offset-1">
               <input type="text" id="mail_contact" name="mail_contact" class="mail_contact" placeholder="@ :" size="70" maxlength="30" />
               <?php  if(isset($errorsContact['empty_mail'])) : ?>
-              <small class="form-text"><?= $errorsContact['empty_mail']; ?></small>
+              <small class="form-text error"><?= $errorsContact['empty_mail']; ?></small>
               <?php endif; ?>
               <?php  if(isset($errorsContact['incorrect_mail'])) : ?>
-              <small class="form-text"><?= $errorsContact['incorrect_mail']; ?></small>
+              <small class="form-text error"><?= $errorsContact['incorrect_mail']; ?></small>
               <?php endif; ?>
             </div>
         </div>
@@ -129,13 +130,13 @@
           <div class="col-9 offset-1">
             <textarea id="message_contact" name="message_contact" class="message" cols="70" rows="10"></textarea>
             <?php  if(isset($errorsContact['empty_message'])) : ?>
-            <small class="form-text"><?= $errorsContact['empty_message']; ?></small>
+            <small class="form-text error"><?= $errorsContact['empty_message']; ?></small>
             <?php endif; ?>
           </div>
         </div>
         <div class="row">
           <div class="col-3 offset-9">
-              <input class="send_contact" type="button" value="SEND"/>
+              <input type="submit" value="SEND" class="send_contact" />
           </div>
         </div>
       </form>

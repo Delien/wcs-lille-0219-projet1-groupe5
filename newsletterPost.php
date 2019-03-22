@@ -1,12 +1,12 @@
 <?php
 
-function test_input($input) {
-    return htmlspecialchars($input);
-}
-
 if($_SERVER['REQUEST_METHOD'] == 'POST') 
 {
     $errorsNews = [];
+
+    function test_input($input) {
+        return htmlspecialchars($input);
+    }    
 
     $name = test_input($_POST['name_new']);
     $mail = test_input($_POST['mail_new']);
@@ -30,12 +30,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
         //if(preg_match($pattern_mail,$mail))
         if(!filter_var($mail, FILTER_VALIDATE_EMAIL))
         {
-            $errorsNews['incorrect_mail'] = 'Incorrect email adrress';
+           $errorsNews['incorrect_mail'] = 'Incorrect email adrress';
         }
     }
 
     if(count($errorsNews) == 0) {
         header('location: formContact.php?new_success');
+    } else {
+        header('location: formContact.php');
     }
 
 }
