@@ -36,8 +36,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 
     if(count($errorsContact) == 0) {
         header('location: formContact.php?mail_success');
-    } else {
-        header('location: formContact.php');
+        exit;
     }
-
 }

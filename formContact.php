@@ -1,6 +1,70 @@
 <?php
-require 'newsletterPost.php';
-require 'contactPost.php';
+
+function test_input($input) {
+  return htmlspecialchars($input);
+} 
+
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+  if($_POST['name_new'] && $_POST['mail_new']) {
+    $errorsNews = [];
+
+    $name = test_input($_POST['name_new']);
+    $mail = test_input($_POST['mail_new']);
+
+    if(empty($name)) {
+      $errorsNews['empty_name'] = 'This field can not be empty';
+    } else {
+      $pattern_name = '/^[A-Z][\p{L}-]*$/';
+      if(preg_match($pattern_name,$name)) {
+        $errorsNews['incorrect_name'] = 'Incorrect name';
+      }
+    }
+
+    if(empty($mail)) {
+      $errorsNews['empty_mail'] = 'This field can not be empty';
+    } else {
+      //$pattern_mail = '/^[a-z0-9]+[-_.]?[a-z0-9]+[-_.]?[a-z0-9]+@[a-z]+\.[a-z]{2,}$/';
+      //if(preg_match($pattern_mail,$mail))
+      if(!filter_var($mail, FILTER_VALIDATE_EMAIL)) {
+        $errorsNews['incorrect_mail'] = 'Incorrect email adrress';
+      }
+    }
+
+    if(count($errorsNews) == 0) {
+      header('location: formContact.php?new_success');
+      exit;
+    }
+  } else {
+    $errorsContact = [];
+
+    $choice = test_input($_POST['choix_contact']);
+    $mail = test_input($_POST['mail_contact']);
+    $message = test_input($_POST['message_contact']);
+
+    if(empty($choice) || $choice == 'I am ...') {
+      $errorsContact['empty_choice'] = 'This field can not be empty';
+    }
+
+    if(empty($mail)) {
+      $errorsContact['empty_mail'] = 'This field can not be empty';
+    } else {
+      //$pattern_mail = '/^[a-z0-9]+[-_.]?[a-z0-9]+[-_.]?[a-z0-9]+@[a-z]+\.[a-z]{2,}$/';
+      //if(preg_match($pattern_mail,$mail))
+      if(!filter_var($mail, FILTER_VALIDATE_EMAIL)) {
+        $errorsContact['incorrect_mail'] = 'Incorrect email adrress';
+      }
+    }
+
+    if(empty($message)) {
+      $errorsContact['empty_message'] = 'This field can not be empty';
+    }
+
+    if(count($errorsContact) == 0) {
+      header('location: formContact.php?mail_success');
+      exit;
+    }
+  }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -52,15 +116,15 @@ require 'contactPost.php';
             <h6 class="newletter_title">Sign up to our Newsletter !</h6>
         </div>
       </div>
-      <form action="newsletterPost.php" method="post" id="newletter" class="newletter">
+      <form action="formContact.php" method="post" id="newletter" class="newletter">
         <div class="row">
           <div class="col-9 offset-1">
             <input type="text" id="name_new" name="name_new" class="name" placeholder="Name :" size="70" maxlength="30"/>
             <?php  if(isset($errorsNews['empty_name'])) : ?>
-            <small class="form-text error"><?= $errorsNews['empty_name']; ?></small>
+            <p class="form-text error"><?= $errorsNews['empty_name']; ?></p>
             <?php endif; ?>
             <?php  if(isset($errorsNews['incorrect_name'])) : ?>
-            <small class="form-text error"><?= $errorsNews['incorrect_name']; ?></small>
+            <p class="form-text error"><?= $errorsNews['incorrect_name']; ?></p>
             <?php endif; ?>
           </div>
         </div>
@@ -68,10 +132,10 @@ require 'contactPost.php';
           <div class="col-9 offset-1">
             <input type="text" id="mail_new" name="mail_new" class="mail_new" placeholder="Mail :" size="70" maxlength="30" />
             <?php  if(isset($errorsNews['empty_mail'])) : ?>
-            <small class="form-text error"><?= $errorsNews['empty_mail']; ?></small>
+            <p class="form-text error"><?= $errorsNews['empty_mail']; ?></p>
             <?php endif; ?>
             <?php  if(isset($errorsNews['incorrect_mail'])) : ?>
-            <small class="form-text error"><?= $errorsNews['incorrect_mail']; ?></small>
+            <p class="form-text error"><?= $errorsNews['incorrect_mail']; ?></p>
             <?php endif; ?>
           </div>
         </div>    
@@ -100,7 +164,7 @@ require 'contactPost.php';
           </p>
         </div>
       </div>
-      <form action="contactPost.php" method="post">
+      <form action="formContact.php" method="post" id="contactpost" class="contactpost">
         <div class="row">
           <div class="col-9 offset-1">
             <select  id="choix_contact" name="choix_contact">
@@ -111,7 +175,7 @@ require 'contactPost.php';
               <option>I am looking for a formation</option>
             </select> 
             <?php  if(isset($errorsContact['empty_choice'])) : ?>
-            <small class="form-text error"><?= $errorsContact['empty_choice']; ?></small>
+            <p class="form-text error"><?= $errorsContact['empty_choice']; ?></p>
             <?php endif; ?>
           </div>
         </div>
@@ -119,10 +183,10 @@ require 'contactPost.php';
             <div class="col-9 offset-1">
               <input type="text" id="mail_contact" name="mail_contact" class="mail_contact" placeholder="@ :" size="70" maxlength="30" />
               <?php  if(isset($errorsContact['empty_mail'])) : ?>
-              <small class="form-text error"><?= $errorsContact['empty_mail']; ?></small>
+              <p class="form-text error"><?= $errorsContact['empty_mail']; ?></p>
               <?php endif; ?>
               <?php  if(isset($errorsContact['incorrect_mail'])) : ?>
-              <small class="form-text error"><?= $errorsContact['incorrect_mail']; ?></small>
+              <p class="form-text error"><?= $errorsContact['incorrect_mail']; ?></p>
               <?php endif; ?>
             </div>
         </div>
@@ -130,7 +194,7 @@ require 'contactPost.php';
           <div class="col-9 offset-1">
             <textarea id="message_contact" name="message_contact" class="message" cols="70" rows="10"></textarea>
             <?php  if(isset($errorsContact['empty_message'])) : ?>
-            <small class="form-text error"><?= $errorsContact['empty_message']; ?></small>
+            <p class="form-text error"><?= $errorsContact['empty_message']; ?></p>
             <?php endif; ?>
           </div>
         </div>

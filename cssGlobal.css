@@ -202,14 +202,17 @@ Partie map
     background-size: cover;
     padding: 10px;
 }
+
 .newletter_title {
     background-color: rgb(231, 228, 228);
     opacity: 0.7;
     padding: 8px;
 }
+
 .newletter {
     opacity: 0.8;
 }
+
 .paragraph {
     margin-left: 20%;
 }
@@ -218,5 +221,6 @@ Partie map
 }
 
 .error {
-    color: rgb(231, 228, 228);
+    background-color: rgb(231, 228, 228);
+    opacity: 0.7;
 }

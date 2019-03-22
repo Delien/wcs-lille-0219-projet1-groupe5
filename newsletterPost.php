@@ -36,8 +36,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 
     if(count($errorsNews) == 0) {
         header('location: formContact.php?new_success');
+        exit;
     } else {
-        header('location: formContact.php');
+        
     }
 
 }
