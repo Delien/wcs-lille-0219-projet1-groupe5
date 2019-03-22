@@ -1,32 +1,31 @@
 <?php
 
-function test_input($input) {
+function testInput($input) {
   return htmlspecialchars($input);
 } 
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
-  if($_POST['name_new'] && $_POST['mail_new']) {
+  if($_POST['nameNew'] && $_POST['mailNew']) {
     $errorsNews = [];
 
-    $name = test_input($_POST['name_new']);
-    $mail = test_input($_POST['mail_new']);
+    $nameNew = testInput($_POST['nameNew']);
+    $mailNew = testInput($_POST['mailNew']);
 
-    if(empty($name)) {
-      $errorsNews['empty_name'] = 'This field can not be empty';
+    if(empty($nameNew)) {
+      $errorsNews['emptyName'] = 'This field can not be empty';
     } else {
-      $pattern_name = '/^[A-Z][\p{L}-]*$/';
-      if(preg_match($pattern_name,$name)) {
-        $errorsNews['incorrect_name'] = 'Incorrect name';
+      $patternName = '/^[A-Z][\p{L}-]*$/';
+      if(preg_match($patternName,$nameNew)) {
+        $errorsNews['incorrectName'] = 'Incorrect name';
       }
     }
 
-    if(empty($mail)) {
-      $errorsNews['empty_mail'] = 'This field can not be empty';
+    if(empty($mailNew)) {
+      $errorsNews['emptyMail'] = 'This field can not be empty';
     } else {
-      //$pattern_mail = '/^[a-z0-9]+[-_.]?[a-z0-9]+[-_.]?[a-z0-9]+@[a-z]+\.[a-z]{2,}$/';
-      //if(preg_match($pattern_mail,$mail))
-      if(!filter_var($mail, FILTER_VALIDATE_EMAIL)) {
-        $errorsNews['incorrect_mail'] = 'Incorrect email adrress';
+      $patternMail = '/^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,}$/';
+      if(preg_match($patternMail,$mailNew)) {
+        $errorsNews['incorrectMail'] = 'Incorrect email adrress';
       }
     }
 
@@ -37,30 +36,32 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
   } else {
     $errorsContact = [];
 
-    $choice = test_input($_POST['choix_contact']);
-    $mail = test_input($_POST['mail_contact']);
-    $message = test_input($_POST['message_contact']);
+    $choiceContact = testInput($_POST['choixContact']);
+    $mailContact = testInput($_POST['mailContact']);
+    $messageContact = testInput($_POST['messageContact']);
 
-    if(empty($choice) || $choice == 'I am ...') {
-      $errorsContact['empty_choice'] = 'This field can not be empty';
+    if($choiceContact == 'I am ...' ) {
+      $errorsContact['emptychoice'] = 'This field can not be empty';
     }
 
-    if(empty($mail)) {
-      $errorsContact['empty_mail'] = 'This field can not be empty';
+    if(empty($mailContact)) {
+      $errorsContact['emptyMail'] = 'This field can not be empty';
     } else {
-      //$pattern_mail = '/^[a-z0-9]+[-_.]?[a-z0-9]+[-_.]?[a-z0-9]+@[a-z]+\.[a-z]{2,}$/';
-      //if(preg_match($pattern_mail,$mail))
-      if(!filter_var($mail, FILTER_VALIDATE_EMAIL)) {
-        $errorsContact['incorrect_mail'] = 'Incorrect email adrress';
+      $patternMail = '/^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,}$/';
+      if(preg_match($patternMail,$mailContact)) {
+        $errorsContact['incorrectMail'] = 'Incorrect email adrress';
       }
     }
 
-    if(empty($message)) {
-      $errorsContact['empty_message'] = 'This field can not be empty';
+    if(empty($messageContact)) {
+      $errorsContact['emptyMessage'] = 'This field can not be empty';
     }
 
     if(count($errorsContact) == 0) {
       header('location: formContact.php?mail_success');
+      exit;
+    } else {
+      header('location: formContact.php#change');
       exit;
     }
   }
@@ -119,23 +120,23 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       <form action="formContact.php" method="post" id="newletter" class="newletter">
         <div class="row">
           <div class="col-9 offset-1">
-            <input type="text" id="name_new" name="name_new" class="name" placeholder="Name :" size="70" maxlength="30"/>
-            <?php  if(isset($errorsNews['empty_name'])) : ?>
-            <p class="form-text error"><?= $errorsNews['empty_name']; ?></p>
+            <input type="text" id="nameNew" name="nameNew" class="name" placeholder="Name :" size="70" maxlength="30"/>
+            <?php  if(isset($errorsNews['emptyName'])) : ?>
+            <p class="form-text error"><?= $errorsNews['emptyName']; ?></p>
             <?php endif; ?>
-            <?php  if(isset($errorsNews['incorrect_name'])) : ?>
-            <p class="form-text error"><?= $errorsNews['incorrect_name']; ?></p>
+            <?php  if(isset($errorsNews['incorrectName'])) : ?>
+            <p class="form-text error"><?= $errorsNews['incorrectName']; ?></p>
             <?php endif; ?>
           </div>
         </div>
         <div class="row">
           <div class="col-9 offset-1">
-            <input type="text" id="mail_new" name="mail_new" class="mail_new" placeholder="Mail :" size="70" maxlength="30" />
-            <?php  if(isset($errorsNews['empty_mail'])) : ?>
-            <p class="form-text error"><?= $errorsNews['empty_mail']; ?></p>
+            <input type="text" id="mailNew" name="mailNew" class="mail_new" placeholder="Mail :" size="70" maxlength="30" />
+            <?php  if(isset($errorsNews['emptyMail'])) : ?>
+            <p class="form-text error"><?= $errorsNews['emptyMail']; ?></p>
             <?php endif; ?>
-            <?php  if(isset($errorsNews['incorrect_mail'])) : ?>
-            <p class="form-text error"><?= $errorsNews['incorrect_mail']; ?></p>
+            <?php  if(isset($errorsNews['incorrectMail'])) : ?>
+            <p class="form-text error"><?= $errorsNews['incorrectMail']; ?></p>
             <?php endif; ?>
           </div>
         </div>    
@@ -164,37 +165,37 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
           </p>
         </div>
       </div>
-      <form action="formContact.php" method="post" id="contactpost" class="contactpost">
+      <form action="formContact.php" method="post" id="contactPost" class="contactPost">
         <div class="row">
           <div class="col-9 offset-1">
-            <select  id="choix_contact" name="choix_contact">
+            <select  id="choixContact" name="choixContact">
               <option>I am ...</option>
               <option>I am an incubator</option>
               <option>I am a company</option>
               <option>I am looking for an internship</option>
               <option>I am looking for a formation</option>
             </select> 
-            <?php  if(isset($errorsContact['empty_choice'])) : ?>
-            <p class="form-text error"><?= $errorsContact['empty_choice']; ?></p>
+            <?php  if(isset($errorsContact['emptychoice'])) : ?>
+            <p class="form-text error"><?= $errorsContact['emptychoice']; ?></p>
             <?php endif; ?>
           </div>
         </div>
         <div class="row">
             <div class="col-9 offset-1">
-              <input type="text" id="mail_contact" name="mail_contact" class="mail_contact" placeholder="@ :" size="70" maxlength="30" />
-              <?php  if(isset($errorsContact['empty_mail'])) : ?>
-              <p class="form-text error"><?= $errorsContact['empty_mail']; ?></p>
+              <input type="text" id="mailContact" name="mailContact" class="mail_contact" placeholder="@ :" size="70" maxlength="30" />
+              <?php  if(isset($errorsContact['emptyMail'])) : ?>
+              <p class="form-text error"><?= $errorsContact['emptyMail']; ?></p>
               <?php endif; ?>
-              <?php  if(isset($errorsContact['incorrect_mail'])) : ?>
-              <p class="form-text error"><?= $errorsContact['incorrect_mail']; ?></p>
+              <?php  if(isset($errorsContact['incorrectMail'])) : ?>
+              <p class="form-text error"><?= $errorsContact['incorrectMail']; ?></p>
               <?php endif; ?>
             </div>
         </div>
         <div class="row">
           <div class="col-9 offset-1">
-            <textarea id="message_contact" name="message_contact" class="message" cols="70" rows="10"></textarea>
-            <?php  if(isset($errorsContact['empty_message'])) : ?>
-            <p class="form-text error"><?= $errorsContact['empty_message']; ?></p>
+            <textarea id="messageContact" name="messageContact" class="message" cols="70" rows="10"></textarea>
+            <?php  if(isset($errorsContact['emptyMessage'])) : ?>
+            <p class="form-text error"><?= $errorsContact['emptyMessage']; ?></p>
             <?php endif; ?>
           </div>
         </div>
