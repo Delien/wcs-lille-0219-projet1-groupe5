@@ -15,7 +15,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       $errorsNews['emptyName'] = 'This field can not be empty';
     } else {
       $patternName = '/^[A-Z][\p{L}-]*$/';
-      if(preg_match($patternName,$nameNew)) {
+      if(!preg_match($patternName,$nameNew)) {
         $errorsNews['incorrectName'] = 'Incorrect name';
       }
     }
@@ -24,7 +24,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       $errorsNews['emptyMail'] = 'This field can not be empty';
     } else {
       $patternMail = '/^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,}$/';
-      if(preg_match($patternMail,$mailNew)) {
+      if(!preg_match($patternMail,$mailNew)) {
         $errorsNews['incorrectMail'] = 'Incorrect email adrress';
       }
     }
@@ -40,7 +40,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $mailContact = testInput($_POST['mailContact']);
     $messageContact = testInput($_POST['messageContact']);
 
-    if($choiceContact == 'I am ...' ) {
+    if($choiceContact == 'I am ...') {
       $errorsContact['emptychoice'] = 'This field can not be empty';
     }
 
@@ -48,7 +48,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       $errorsContact['emptyMail'] = 'This field can not be empty';
     } else {
       $patternMail = '/^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,}$/';
-      if(preg_match($patternMail,$mailContact)) {
+      if(!preg_match($patternMail,$mailContact)) {
         $errorsContact['incorrectMail'] = 'Incorrect email adrress';
       }
     }
@@ -59,9 +59,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if(count($errorsContact) == 0) {
       header('location: formContact.php?mail_success');
-      exit;
-    } else {
-      header('location: formContact.php#change');
       exit;
     }
   }
@@ -165,15 +162,15 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
           </p>
         </div>
       </div>
-      <form action="formContact.php" method="post" id="contactPost" class="contactPost">
+      <form action="formContact.php#change" method="post" id="contactPost" class="contactPost">
         <div class="row">
           <div class="col-9 offset-1">
             <select  id="choixContact" name="choixContact">
-              <option>I am ...</option>
-              <option>I am an incubator</option>
-              <option>I am a company</option>
-              <option>I am looking for an internship</option>
-              <option>I am looking for a formation</option>
+              <option value="I am ...">I am ...</option>
+              <option value="I am an incubator">I am an incubator</option>
+              <option value="I am a company">I am a company</option>
+              <option value="I am looking for an internship">I am looking for an internship</option>
+              <option value="I am looking for a formation">I am looking for a formation</option>
             </select> 
             <?php  if(isset($errorsContact['emptychoice'])) : ?>
             <p class="form-text error"><?= $errorsContact['emptychoice']; ?></p>
