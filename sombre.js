@@ -1,25 +1,28 @@
-$("#darkTrigger").click(function(){
+ // garde le changement de theme en mémoire lors d'un changement de page
 
-    /*if ($("body").hasClass("dark")){
-        $("body").removeClass("dark");
-    }
-    else{
-        $("body").addClass("dark");
-    } */
+// fonction dark globale
 
+const darkbutton = () => {
     $("body").toggleClass("dark")
     $( "div.container" ).toggleClass( "dark" );
     $("span.subtitle").toogleClass("dark");
-    
+}
+
+// script du bouton
+
+$("#darkTrigger").click(function(){
+    darkbutton() ;
+    $("body").toggleClass("active")      
 });
 
-/* activation en fonction de l'heure
+// choix du theme automatique en fonction de l'heure locale (format h24)
 
 $(document).ready(function () {
     const d = new Date();
     const n = d.getHours();
 
     if(n > 17 || n < 8){
-        $("body").addClass("dark");
+        darkbutton();
     }
-}); */
+})
+
