@@ -224,13 +224,13 @@ Partie map
 /* Css theme sombre */
 
 .dark {
-    background-color: #112F41;
+    background-color: #0A0A0A;
     color: #ffffff;
     transition: all .6s ease-in;
   }
   
 .dark button {
-    background: #144098;
+    background: #1E1B1B;
     color: #fff;
   }
 
@@ -238,9 +238,17 @@ Partie map
     background: lightgrey;
     color: black;
   }
+.dark button:hover {
+    font-weight: bold;
+    color : white ;
+  }
+
+.btn:hover {
+    font-weight: bold;
+  }
 
 .container.dark{
-    background : #0148ad;
+    background : #1E1B1B;
 }
 
 .dark h2 .subtitle{
@@ -257,7 +265,7 @@ Partie map
 }
 
 .dark .bg-light {
-    background-color : #0148ad !important;
+    background-color : #1E1B1B !important;
 }
 
 #darkTrigger {
@@ -278,7 +286,7 @@ Partie map
 }
 
 .dark .titrepage {
-    background-color : red;
+    background-color : #0A0A0A ;
 }
 .dark a {
     color : yellow ;
