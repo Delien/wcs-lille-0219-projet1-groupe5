@@ -4,6 +4,7 @@ Partie Commun
 
 body {
     font-family: 'Montserrat', sans-serif;
+    transition: all .6s ease-in;
 }
 .container {
     background-color : whitesmoke;
@@ -83,7 +84,7 @@ h2 {
 }
 .history {
     margin-top: -3rem;
-    height: 22rem;
+    height: 34rem;
     overflow-y: scroll;
 }
 
@@ -197,6 +198,11 @@ Partie map
    color: grey;
 }
 
+.footer a:hover{
+    color : black;
+    font-weight: blod;
+}
+
 .changeIMG {
     background-image: url("picture/john-schnobrich.jpg");
     background-size: cover;
@@ -213,4 +219,82 @@ Partie map
 }
 .bold {
     font-weight: bold;
+}
+
+/* Css theme sombre */
+
+.dark {
+    background-color: #0A0A0A;
+    color: #ffffff;
+    transition: all .6s ease-in;
+  }
+  
+.dark button {
+    height : 3rem;
+    width : 3rem ;
+    background-image : url("picture/sun.png");
+    background-size: contain;
+    background-repeat : no-repeat;
+    background-color : #1E1B1B;
+  }
+
+.btn  {
+    height : 3rem;
+    width : 3rem ;
+    background-image : url("picture/moon.png");
+    background-size: contain;
+    background-repeat : no-repeat;
+  }
+.dark button:hover {
+    font-weight: bold;
+    color : white ;
+  }
+
+.btn:hover {
+    font-weight: bold;
+  }
+
+.container.dark{
+    background : #1E1B1B;
+}
+
+.dark h2 .subtitle{
+    border-bottom: 0.15rem solid white;
+}
+
+.dark h6 a {
+    color : lightgrey;
+}
+
+.dark h6 a:hover {
+    color : white;
+    font-weight: bold ;
+}
+
+.dark .bg-light {
+    background-color : #1E1B1B !important;
+}
+
+#darkTrigger {
+    margin-bottom : 0.3rem ; 
+}
+
+.dark .navbar-light .navbar-nav .nav-link {
+    color : lightgrey ;
+}
+
+.dark .navbar-light .navbar-nav .nav-link:hover {
+    color : white ;
+}
+
+.dark .navbar-light .navbar-nav .nav-link.active {
+    font-weight : bold ;
+    color : white ;
+}
+
+.dark .titrepage {
+    background-color : #0A0A0A ;
+}
+.dark a {
+    color : yellow ;
 }
