@@ -230,13 +230,20 @@ Partie map
   }
   
 .dark button {
-    background: #1E1B1B;
-    color: #fff;
+    height : 3rem;
+    width : 3rem ;
+    background-image : url("picture/sun.png");
+    background-size: contain;
+    background-repeat : no-repeat;
+    background-color : #1E1B1B;
   }
 
-.btn {
-    background: lightgrey;
-    color: black;
+.btn  {
+    height : 3rem;
+    width : 3rem ;
+    background-image : url("picture/moon.png");
+    background-size: contain;
+    background-repeat : no-repeat;
   }
 .dark button:hover {
     font-weight: bold;
