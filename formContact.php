@@ -144,64 +144,64 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         </div>
       </form>
     </div>
-    <div class="change">
-      <div class="row">
-        <div class="col-6 offset-5">
-          <h2><span class="subtitle">Contact Us</span></h2>
-        </div>
+    <div class="row">
+      <div class="col-6 offset-5">
+        <h2><span class="subtitle">Contact Us</span></h2>
       </div>
-      <div class="row">
-        <div class="col-9 offset-1"> 
-          <p class="paragraph">
-            <span class="bold">HEY !</span><br>
-            Do you want us to meet?
-            Would you like to share your incredible talents and join one of our companies?
-            Would you like to learn the trade and do an internship with us?
-            Or simply ask us a question?
-            <span class="bold">Contact us with this form:</span>
-          </p>
-        </div>
+    </div>
+    <div class="row">
+      <div class="col-9 offset-1"> 
+        <p class="paragraph">
+          <span class="bold">HEY !</span><br>
+          Do you want us to meet?
+          Would you like to share your incredible talents and join one of our companies?
+          Would you like to learn the trade and do an internship with us?
+          Or simply ask us a question?
+          <span class="bold">Contact us with this form:</span>
+        </p>
       </div>
-      <form action="formContact.php#change" method="post" id="contactPost" class="contactPost">
-        <div class="row">
-          <div class="col-9 offset-1">
-            <select  id="choixContact" name="choixContact">
-              <option value="I am ...">I am ...</option>
-              <option value="I am an incubator">I am an incubator</option>
-              <option value="I am a company">I am a company</option>
-              <option value="I am looking for an internship">I am looking for an internship</option>
-              <option value="I am looking for a formation">I am looking for a formation</option>
-            </select> 
-            <?php  if(isset($errorsContact['emptychoice'])) : ?>
-            <p class="form-text error"><?= $errorsContact['emptychoice']; ?></p>
-            <?php endif; ?>
-          </div>
-        </div>
-        <div class="row">
+      <div class="contact">
+        <form action="formContact.php" method="post" id="contactPost" class="contactPost">
+          <div class="row">
             <div class="col-9 offset-1">
-              <input type="text" id="mailContact" name="mailContact" class="mail_contact" placeholder="@ :" size="70" maxlength="30" />
-              <?php  if(isset($errorsContact['emptyMail'])) : ?>
-              <p class="form-text error"><?= $errorsContact['emptyMail']; ?></p>
-              <?php endif; ?>
-              <?php  if(isset($errorsContact['incorrectMail'])) : ?>
-              <p class="form-text error"><?= $errorsContact['incorrectMail']; ?></p>
+              <select  id="choixContact" name="choixContact">
+                <option value="I am ...">I am ...</option>
+                <option value="I am an incubator">I am an incubator</option>
+                <option value="I am a company">I am a company</option>
+                <option value="I am looking for an internship">I am looking for an internship</option>
+                <option value="I am looking for a formation">I am looking for a formation</option>
+              </select> 
+              <?php  if(isset($errorsContact['emptychoice'])) : ?>
+              <p class="form-text error"><?= $errorsContact['emptychoice']; ?></p>
               <?php endif; ?>
             </div>
-        </div>
-        <div class="row">
-          <div class="col-9 offset-1">
-            <textarea id="messageContact" name="messageContact" class="message" cols="70" rows="10"></textarea>
-            <?php  if(isset($errorsContact['emptyMessage'])) : ?>
-            <p class="form-text error"><?= $errorsContact['emptyMessage']; ?></p>
-            <?php endif; ?>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-3 offset-9">
-              <input type="submit" value="SEND" class="send_contact" />
+          <div class="row">
+              <div class="col-9 offset-1">
+                <input type="text" id="mailContact" name="mailContact" class="mail_contact" placeholder="@ :" size="70" maxlength="30" />
+                <?php  if(isset($errorsContact['emptyMail'])) : ?>
+                <p class="form-text error"><?= $errorsContact['emptyMail']; ?></p>
+                <?php endif; ?>
+                <?php  if(isset($errorsContact['incorrectMail'])) : ?>
+                <p class="form-text error"><?= $errorsContact['incorrectMail']; ?></p>
+                <?php endif; ?>
+              </div>
           </div>
-        </div>
-      </form>
+          <div class="row">
+            <div class="col-9 offset-1">
+              <textarea id="messageContact" name="messageContact" class="message" cols="70" rows="10"></textarea>
+              <?php  if(isset($errorsContact['emptyMessage'])) : ?>
+              <p class="form-text error"><?= $errorsContact['emptyMessage']; ?></p>
+              <?php endif; ?>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3 offset-9">
+                <input type="submit" value="SEND" class="send_contact" />
+            </div>
+          </div>
+        </form>
+      </div>
       <footer class="page-footer font-small">
           <!-- Footer Links -->
           <div class="container">
