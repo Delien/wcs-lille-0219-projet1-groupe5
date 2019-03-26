@@ -10,3 +10,4 @@
     <title>WILD - wild information of the digital in Lille</title>
 </head>
 <body>
+<button class="btn" id="darkTrigger"> </button>
