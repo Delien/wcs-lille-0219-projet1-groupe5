@@ -104,7 +104,7 @@ a img:hover {
 
 .facilities {
     height: 31rem;
-    widht : 80%;
+    width: 80%;
     overflow-y: scroll;
 }
 
@@ -208,12 +208,17 @@ Partie map
     background-size: cover;
     padding: 10px;
 }
-.newletter_1 input {
+
+.newletter_title {
+    background-color: rgb(231, 228, 228);
     opacity: 0.7;
+    padding: 8px;
 }
-.newletter_1 {
+
+.newletter {
     opacity: 0.8;
 }
+
 .paragraph {
     margin-left: 20%;
 }
@@ -221,13 +226,17 @@ Partie map
     font-weight: bold;
 }
 
+.error {
+    color: red;
+    background-image: white;
+
 /* Css theme sombre */
 
 .dark {
     background-color: #0A0A0A;
     color: #ffffff;
     transition: all .6s ease-in;
-  }
+ }
   
 .dark button {
     height : 3rem;
