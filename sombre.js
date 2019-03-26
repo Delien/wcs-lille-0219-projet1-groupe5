@@ -5,7 +5,7 @@
 const darkbutton = () => {
     $("body").toggleClass("dark")
     $( "div.container" ).toggleClass( "dark" );
-    $("span.subtitle").toogleClass("dark");
+    $("span.subtitle").toggleClass("dark");
 }
 
 // script du bouton
