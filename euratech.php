@@ -180,7 +180,7 @@
             </div>
      
 
-            <div class="col-3">
+            <div class="col-3 offset-1">
                 <img src="picture/softcomputing.png" alt="logo_ent" class="logo_ent">
             </div>
             <div class="col-4">
@@ -212,7 +212,7 @@
                 </p>
             </div>
                      
-            <div class="col-3 ">
+            <div class="col-3 offset-1">
                 <img src="picture/arobas.png" alt="logo_ent1" class="logo_ent">
             </div>
             <div class="col-4">
