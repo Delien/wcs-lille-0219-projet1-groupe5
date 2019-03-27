@@ -123,29 +123,5 @@
             </div>    
         </div>       
     </section>  
-    <!-- map-environnement -->
-    <section>
-        <div class="row">
-            <div class="col-10 offset-3">
-                <div class="map_faci">
-                    <h2><span class="subtitle">Facilities and transports services</span></h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57257.58747735495!2d3.047054053682592!3d50.63732754614762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d55c764ab439%3A0x2e9bfd5c48d283b!2sEuraTechnologies!5e0!3m2!1sfr!2sfr!4v1551964680317" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col offset-1">
-                <h3>How to join us</h3>
-                <ul>
-                    <li>Subway Line 2 - Canteleu stop - 10mn walk away</li>
-                    <li>Bus Line 18 - Euratechnologie stop </li>
-                </ul>
-            </div>   
-        </div>  
-    </section> 
 </div>
 <?php require 'footer.php'; ?>

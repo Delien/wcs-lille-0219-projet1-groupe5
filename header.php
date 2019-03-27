@@ -11,3 +11,8 @@
 </head>
 <body>
 <button class="btn" id="darkTrigger"> </button>
+<p> <span class="theme"> change the theme </span> </p>
+
+<img src ="/logowild.png" alt = "wild logo" />
+<h1 class="site_tittle"> WILD - Wild Information of the digital in Lille </h1>
+<p> <span class = "baseline" >What about <<\Lille's technopolis>> </span></p>

@@ -22,7 +22,7 @@
                   <h5>News #1 Potion Social</h5>
                   <small class="text">
                      Antoine Leclercq has a long-standing interest in the changing nature of the retail business in the age of the internet and social networks. After an experience in IT in Lebanon, he returned to Lille with the intention of launching his company and has experienced several pivots since, until a fundraising of one million euros end 2018 with Potion Social. 
-                  <a href="https://www.euratechnologies.com/potion-social-levee-fonds/"> More info...</a>
+                  <a href="https://www.euratechnologies.com/potion-social-levee-fonds/" target="_blank"> More info...</a>
                   </small>
                </div>
             </div>
@@ -34,7 +34,7 @@
                      <h5>News #2 WENOV, the future of the innovative digital city is at EuraTechnologies</h5>
                      <small class="text">
                         In full swing, the district of EuraTechnologies continues to innovate. The cornerstone of an extraordinary architectural and environmental project was laid on Monday, February 18th. A true hub dedicated to digital culture and innovation, Wenov will open in the second quarter of 2020 to offer a new vision of the responsible and sustainable innovative city. 
-                        <a href="https://www.euratechnologies.com/wenov-ville-futur-euratechnologies/"> More info...</a>
+                        <a href="https://www.euratechnologies.com/wenov-ville-futur-euratechnologies/" target="_blank"> More info...</a>
                      </small>
                </div>
             </div>
@@ -45,7 +45,7 @@
                <div class="Positiontext"> 
                   <h5>News #3 7th edition of the Stanford-Lille Innovation</h5>
                   <small class="text">
-               The 7th edition of the "Stanford-Lille Innovation & Entrepreneurship" program, born as part of an exceptional collaboration between Stanford Center for Professional Development and EuraTechnologies (in partnership with EDHEC, supported by the Hauts-de-France Region) , will begin in May 2019 for the first session at Stanford and in June 2019 for the second session in Lille. <a title="More Info" href="https://www.euratechnologies.com/stanford-lille-innovation-entrepreneurship-program-2019/">More info...</a>
+               The 7th edition of the "Stanford-Lille Innovation & Entrepreneurship" program, born as part of an exceptional collaboration between Stanford Center for Professional Development and EuraTechnologies (in partnership with EDHEC, supported by the Hauts-de-France Region) , will begin in May 2019 for the first session at Stanford and in June 2019 for the second session in Lille. <a title="More Info" href="https://www.euratechnologies.com/stanford-lille-innovation-entrepreneurship-program-2019/" target="_blank">More info...</a>
                   </small>
                </div>
             </div>
