@@ -46,7 +46,6 @@
     <section class="our_select">
         <div class="row-5">
             <div class="span-3 offset-5">
-<<<<<<< HEAD
                 <h2><a class="subtitle" href="#where">WHERE ? WHEN ? WHO ?</a></h2>
             </div>
         </div>
