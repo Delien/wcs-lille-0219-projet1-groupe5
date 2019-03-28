@@ -3,7 +3,7 @@
             <div class="row text-center d-flex justify-content-center pt-5 mb-3 footer">
                 <div class="col-md-2 mb-3">
                     <h6 class="text-uppercase font-weight-bold">
-                    <a href="homecarousel.html">About us</a>
+                    <a href="index.php">About us</a>
                     </h6>
                 </div>
                 <div class="col-md-2 mb-3">
@@ -13,7 +13,7 @@
                 </div>
                 <div class="col-md-2 mb-3">
                     <h6 class="text-uppercase font-weight-bold">
-                    <a href="#!">Annex</a>
+                    <a href="annex.php">Annex</a>
                     </h6>
                 </div>
                 <div class="col-md-2 mb-3">
