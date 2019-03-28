@@ -20,7 +20,7 @@
     </div>     
     <div class="row-2">
         <div class="span-2 offset-2 header">
-            <p>Home / Euratechnologie / DigitalEnvironment / </p>
+            <p><a href="homecarousel.php">Home</a> / <a href="euratech.php">Euratechnologie</a> </p>
         </div>
     </div>     
     <!-- Parti 1 what's about it texte-->

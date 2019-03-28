@@ -1,4 +1,4 @@
-<?php require 'header.php'; ?>
+ <?php require 'header.php'; ?>
 <!-- menu burger -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,7 +20,7 @@
     </div>
     <div class="row-2">
         <div class="span-2 offset-2 header">
-            <p>Home / Euratechnologie / DigitalEnvironment</p>
+            <p><a href="homecarousel.php">Home</a> / <a href="euratech.php">Euratechnologie</a> / <a href="#DigitalEnvironment.php">DigitalEnvironment</a></p>
         </div>
     </div>
     <section class="history_euratech">

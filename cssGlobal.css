@@ -147,9 +147,10 @@ a {
     color: black;
 }
 
-a :hover {
+a:hover {
     text-decoration: none;
-    color: black;
+    color:#FFD400;
+
 }
 
 .roundedImage {
