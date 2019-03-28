@@ -11,8 +11,7 @@ const darkbutton = () => {
 // script du bouton
 
 $("#darkTrigger").click(function(){
-    darkbutton() ;
-    $("body").toggleClass("active")      
+    darkbutton() ;   
 });
 
 // choix du theme automatique en fonction de l'heure locale (format h24)
