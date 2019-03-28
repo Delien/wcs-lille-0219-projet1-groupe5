@@ -50,11 +50,13 @@
                 <h2><span class="subtitle">where ? when ? who ?</span></h2>
             </div>
         </div>               
-        <div class="row">
+
+
+        
             <div class="col-2 offset-2">
                 <img src="picture/logoEnv/logo-blanchemaille.png" alt="logo blanchemaille">
             </div>
-            <div class="col-4">
+            <div class="col-3">
                 <h3>Blanchemaille <small>by Euratechnologies</small></h3>
                 <p>
                     Blanchemaille is a subsidiary of euratechnologie dedicated to e-commerce in Roubaix. 
@@ -62,11 +64,11 @@
                     The e-commerce companies extend over 13000m² with a school of trade.
                 </p>
                 <p>Adrress : 87 rue du Fontenoy 59100 Roubaix</p>
-                <a href="https://blanchemaille-euratechnologies.com/"></a>
+                <a href="https://blanchemaille-euratechnologies.com/" target="_blank"></a>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-2 offset-6">
+    
+   
+            <div class="col-3 offset-1">
                 <img src="picture/logoEnv/logo-plaineimage.png" alt="logo plaine images">
             </div>
             <div class="col-4">
@@ -77,11 +79,11 @@
                     There are 125 companies on 40 000m² with 3 schools.
                 </p>
                 <p>Adrress : 99 A boulevard Constantin Descat 59200 Tourcoing</p>
-                <a href="https://www.plaine-images.fr/"></a>
+                <a href="https://www.plaine-images.fr/" target="_blank"></a>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-2 offset-2">
+      
+
+            <div class="col-3">
                 <img src="picture/logoEnv/logo-rucheentreprise.png" alt="logo ruche entreprise">
             </div>
             <div class="col-4">
@@ -91,12 +93,13 @@
                     There are companies with diverse and various projects. 
                     In Lille metropolis there are 4 hives located in Hellemmes, Villeneuve d'Ascq, Tourcoing and Armentieres.
                 </p>
-                <a href="https://www.lillemetropole.fr/fr/ruches-dentreprises"></a>
+                <a href="https://www.lillemetropole.fr/fr/ruches-dentreprises" target="_blank"></a>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-2 offset-6">
-                <img src="picture/logoEnv/logo-creinnov.png" alt="logo creinnov">
+      
+
+    
+            <div class="col-3 offset-1">
+                <img src="picture/logoEnv/logo-creinnov.png" alt="logo creinnov" target="_blank">
             </div>
             <div class="col-4">
                 <h3>Cre'innov</h3>
@@ -105,11 +108,12 @@
                     The business district of Villeneuve d'Asq is located close to all its businesses as well as the corporate hive.
                 </p>
                 <p>Adrress : 11 rue de l’Harmonie 59650 Villeneuve d’ascq</p>
-                <a href="http://cre-innov.univ-lille1.fr/Presentation/"></a>
+                <a href="http://cre-innov.univ-lille1.fr/Presentation/" target="_blank"></a>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-2 offset-2">
+    
+
+       
+            <div class="col-3">
                 <img src="picture/logoEnv/logo-serrenumerique.png" alt="logo serre numerique">
             </div>
             <div class="col-8">
@@ -119,33 +123,9 @@
                     There are 17,000m² with 3 schools. 
                 </p>
                 <p>Adrress : 2 rue Peclet 59300 Valenciennes</p>
-                <a href="http://www.serre-numerique.fr/"></a>
+                <a href="http://www.serre-numerique.fr/" target="_blank"></a>
             </div>    
-        </div>       
+             
     </section>  
-    <!-- map-environnement -->
-    <section>
-        <div class="row">
-            <div class="col-10 offset-3">
-                <div class="map_faci">
-                    <h2><span class="subtitle">Facilities and transports services</span></h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57257.58747735495!2d3.047054053682592!3d50.63732754614762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d55c764ab439%3A0x2e9bfd5c48d283b!2sEuraTechnologies!5e0!3m2!1sfr!2sfr!4v1551964680317" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col offset-1">
-                <h3>How to join us</h3>
-                <ul>
-                    <li>Subway Line 2 - Canteleu stop - 10mn walk away</li>
-                    <li>Bus Line 18 - Euratechnologie stop </li>
-                </ul>
-            </div>   
-        </div>  
-    </section> 
 </div>
 <?php require 'footer.php'; ?>

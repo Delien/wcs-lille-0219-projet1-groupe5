@@ -47,12 +47,12 @@
                     <p>
                         In just eight years of existence, EuraTechnologies has managed to establish itself as 
                         the spearhead of the French digital economy through 
-                        the <a href="https://www.lafrenchtech.com/en/" class="intern_link">French Tech</a>.
+                        the <a href="https://www.lafrenchtech.com/en/" class="intern_link" target="_blank">French Tech</a>.
                     </p>
                     <p>
                         Designed as the tool of the regional digital pole, it offers, among other things, modular spaces 
                         for rent, a digital studio, videoconferencing rooms and other technical venues.<br>
-                        It also has a GIX ( <a href="https://en.wikipedia.org/wiki/Internet_exchange_point" class="intern_link">
+                        It also has a GIX ( <a href="https://en.wikipedia.org/wiki/Internet_exchange_point" class="intern_link" target="_blank">
                         Global 
                         Internet eXchange</a> ), the only in North of Paris, 
                         and access to a generalized wifi. Finally, the atrium that connects the two old buildings is 
@@ -64,7 +64,7 @@
                         in support of companies, from their initiation to their international deployment.
                     </p>
                     <p>
-                        A <a href="http://www.fundacity.com/european-accelerator-report-2014" class="intern_link">Fundacity’s</a> 
+                        A <a href="http://www.fundacity.com/european-accelerator-report-2014" class="intern_link" target="_blank">Fundacity’s</a> 
                         study reveals that EuraTechnologies is on the podium 
                         of the most important accelerators in Europe (third).
                         Certainly due to its strategic situation in the heart of Europe, 
@@ -103,31 +103,34 @@
                 <p>Forming</p>
             </div>
             <div class="col ecosystem">
-                <a href="https://www.euratechnologies.com/incubateur-d-entreprises/" class="img_link">
+                <a href="https://www.euratechnologies.com/incubateur-d-entreprises/" class="img_link" target="_blank">
                 <img src="picture/incubation.png" alt="incubation"/></a>
                 <p>Incubation</p>
             </div>
             <div class="col ecosystem">
-                <a href="https://www.euratechnologies.com/accelerateur-de-startups/" class="img_link">
+                <a href="https://www.euratechnologies.com/accelerateur-de-startups/" class="img_link" target="_blank">
                 <img src="picture/acceleration.png" alt="Acceleration"/></a>
                 <p>Acceleration</p>
             </div>
             <div class="col ecosystem">
-                <a href="https://www.euratechnologies.com/hotel-dentreprises/" class="img_link">
+                <a href="https://www.euratechnologies.com/hotel-dentreprises/" class="img_link" target="_blank">
                 <img src="picture/business.png" alt="Buisiness development"/></a>
                 <p>Business Dev</p>
             </div>
         </div>         
     </section>        
+
     <!-- partie entreprises-->
     <section class="our_select">
+    
         <div class="row-5">
             <div class="span-2 offset-5">
                 <h2><span class="subtitle">Our Selection of compagnies</span></h2>
             </div>
         </div>
-        <div class="row">
-            <div class="col-2 offset-2">
+
+        
+            <div class="col-3">
                 <img src="picture/microsoft.png"/>
             </div>
             <div class="col-4">
@@ -137,13 +140,14 @@
                     Historical partner of EuraTechnologies
                 </p>
                 <p>
-                    <a href="https://www.euratechnologies.com/entreprises/microsoft/" class="intern_link">
+                    <a href="https://www.euratechnologies.com/entreprises/microsoft/" class="intern_link" target="_blank">
                     More informations...</a>
                 </p>
             </div>
-        </div>  
-        <div class="row">
-            <div class="col-2 offset-6">
+          
+
+       
+            <div class="col-3 offset-1">
                 <img src="picture/capgemini.png" alt="logo_ent" class="logo_ent">
             </div>
             <div class="col-4">
@@ -153,13 +157,14 @@
                     it is also one of the historical partners of EuraTechnologies.
                 </p>
                 <p>
-                    <a href="https://www.euratechnologies.com/entreprises/capgemini/" class="intern_link">
+                    <a href="https://www.euratechnologies.com/entreprises/capgemini/" class="intern_link" target="_blank">
                     More informations...</a>
                 </p>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-2 offset-2">
+      
+
+     
+            <div class="col-3">
                 <img src="picture/ibm.png" alt="logo_ent" class="logo_ent">
             </div>
             <div class="col-4">
@@ -169,13 +174,13 @@
                     and high-level technical services to its customers.
                 </p>
                 <p>
-                    <a href="https://www.euratechnologies.com/entreprises/ibm-services-center/" class="intern_link">
+                    <a href="https://www.euratechnologies.com/entreprises/ibm-services-center/" class="intern_link" target="_blank">
                     More informations...</a>
                 </p>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-2 offset-6">
+     
+
+            <div class="col-3 offset-1">
                 <img src="picture/softcomputing.png" alt="logo_ent" class="logo_ent">
             </div>
             <div class="col-4">
@@ -185,13 +190,14 @@
                     Marketing and Big Data.
                 </p>
                 <p>
-                    <a href="https://www.euratechnologies.com/entreprises/soft-computing/" class="intern_link">
+                    <a href="https://www.euratechnologies.com/entreprises/soft-computing/" class="intern_link" target="_blank">
                     More informations...</a>
                 </p>
             </div>
-        </div>                         
-        <div class="row">
-            <div class="col-2 offset-2">
+               
+
+       
+            <div class="col-3">
                 <img src="picture/clic2buy.png" alt="clic2buy.png" class="logo_ent">
             </div>
             <div class="col-4">
@@ -201,13 +207,12 @@
                     on all digital and non-digital brand media.
                 </p>
                 <p>
-                    <a href="https://www.euratechnologies.com/entreprises/clic2buy/" class="intern_link">
+                    <a href="https://www.euratechnologies.com/entreprises/clic2buy/" class="intern_link" target="_blank">
                     More informations...</a>
                 </p>
             </div>
-        </div>                     
-        <div class="row">
-            <div class="col-2 offset-6">
+                     
+            <div class="col-3 offset-1">
                 <img src="picture/arobas.png" alt="logo_ent1" class="logo_ent">
             </div>
             <div class="col-4">
@@ -217,11 +222,11 @@
                     
                 </p>
                 <p>
-                    <a href="https://www.euratechnologies.com/entreprises/arobas-music/" class="intern_link">
+                    <a href="https://www.euratechnologies.com/entreprises/arobas-music/" class="intern_link" target="_blank">
                     More informations...</a>
                 </p>
             </div>
-        </div>                           
+                                   
     </section>
 <!--                                
 ____  ____  __  ______     __   _    ___    __    __    _______    _   ______________   __   __   __
