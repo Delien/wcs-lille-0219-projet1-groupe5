@@ -107,7 +107,7 @@ require 'header.php';
     </div>   
     <div class="row-2">
         <div class="span-2 offset-2 header">
-            <p>Home / Euratechnologie / DigitalEnvironment / </p>
+            <p><a href="homecarousel.php">Home</a> / <a href="formContact.php">Contact us</a></p>
         </div>
     </div> 
     <?php if(isset($_GET['new_success'])): ?>
@@ -196,19 +196,18 @@ require 'header.php';
                 </div>
             </div>
             <div class="row">
-                <div class="col-3 offset-9">
-                    <input type="submit" value="SEND" class="send_contact" />
+                <div class="span offset-5">
+                    <input type="submit" value="SEND" class="sendContact" />
                 </div>
             </div>
         </form>
     </div>
-                                      <!-- NEWSLETTER HERE --> 
-    <div class="changeIMG">
-      <div class="row">
-          <div class="col-6 offset-5">
+    <div class="row titrenews">
+          <div class="col-6 offset-4">
           <a class="subtitle" href="#newsletter">SIGN UP TO OUR NEWSLETTER !</a>
           </div>
-      </div>
+      </div>                            <!-- NEWSLETTER HERE --> 
+    <div class="changeIMG">
         <form action="formContact.php" method="post" id="newletter" class="newletter">
             <div class="row" id="newsletter">
                 <div class="col-9 offset-1">
@@ -233,8 +232,8 @@ require 'header.php';
                 </div>
             </div>    
             <div class="row">
-                <div class="col-3 offset-9">
-                    <input type="submit" class="send_newsletter" value="SEND"/>
+                <div class="span offset-5">
+                    <input type="submit" class="sendNewsletter" value="SEND"/>
                 </div>
             </div>
         </form>

@@ -1,4 +1,4 @@
-<?php require 'header.php'; ?>
+ <?php require 'header.php'; ?>
 <!-- menu burger -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,7 +20,7 @@
     </div>
     <div class="row-2">
         <div class="span-2 offset-2 header">
-            <p>Home / Euratechnologie / DigitalEnvironment</p>
+            <p><a href="homecarousel.php">Home</a> / <a href="euratech.php">Euratechnologie</a> / <a href="#DigitalEnvironment.php">DigitalEnvironment</a></p>
         </div>
     </div>
     <section class="history_euratech">
@@ -50,10 +50,10 @@
             </div>
         </div>        
         <div class = "row">       
-            <div class="col-2">  
+            <div class="col-2 offset-1">  
                 <img src="picture/logoEnv/logo-blanchemaille.png" alt="logo blanchemaille"> 
             </div>
-            <div id="companies" class="col-3">
+            <div id="companies" class="col-4">
                 <h3>Blanchemaille <small>by Euratechnologies</small></h3>
                 <p>
                     Blanchemaille is a subsidiary of euratechnologie dedicated to e-commerce in Roubaix. 
@@ -66,7 +66,7 @@
             <div class="col">
                 <img src="picture/logoEnv/logo-plaineimage.png" alt="logo plaine images">
             </div>
-            <div class="col-4">
+            <div class="col-3">
                 <h3>Plaine images </h3>
                 <p>
                     Plain Image is a complete ecosystem on the creative industry in Tourcoing. 
@@ -78,10 +78,10 @@
             </div>
         </div>
             <div class="row">
-            <div class="col-2">
+            <div class="col-2 offset-1">
                 <img src="picture/logoEnv/logo-rucheentreprise.png" alt="logo ruche entreprise">
             </div>
-            <div class="col-4">
+            <div class="col-3">
                 <h3>Ruche d'entreprise</h3>
                 <p>
                     Corporate hives welcome companies in creation and evolution.
@@ -90,7 +90,7 @@
                 </p>
                 <a href="https://www.lillemetropole.fr/fr/ruches-dentreprises" target="_blank"></a>
             </div>    
-            <div class="col-2">
+            <div class="col">
                 <img src="picture/logoEnv/logo-creinnov.png" alt="logo creinnov" target="_blank">
             </div>
             <div class="col-4">

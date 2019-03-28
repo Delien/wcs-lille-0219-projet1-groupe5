@@ -20,7 +20,7 @@
     </div>     
     <div class="row-2">
         <div class="span-2 offset-2 header">
-            <p>Home / Euratechnologie / DigitalEnvironment / </p>
+            <p><a href="homecarousel.php">Home</a> / <a href="euratech.php">Euratechnologie</a> </p>
         </div>
     </div>     
     <!-- Parti 1 what's about it texte-->
@@ -129,7 +129,7 @@
         </div>
 
             <div class="row">
-            <div class="col-2">
+            <div class="col-2 offset-1">
                 <img src="picture/microsoft.png"/>
             </div>
             <div class="col-4">
@@ -143,10 +143,10 @@
                     More informations...</a>
                 </p>
             </div>
-            <div class="col-2">
+            <div class="col">
                 <img src="picture/capgemini.png" alt="logo_ent" class="logo_ent">
             </div>
-            <div class="col-4">
+            <div class="col-3">
                 <h3>Capgemini</h3>
                 <p>
                     First digital services company in France and sixth in the world in 2016, 
@@ -161,7 +161,7 @@
       
 
             <div class="row">
-            <div class="col-2">
+            <div class="col-2 offset-1">
                 <img src="picture/ibm.png" alt="logo_ent" class="logo_ent">
             </div>
             <div class="col-4">
@@ -175,10 +175,10 @@
                     More informations...</a>
                 </p>
             </div>
-            <div class="col-2">
+            <div class="col">
                 <img src="picture/softcomputing.png" alt="logo_ent" class="logo_ent">
             </div>
-            <div class="col-4">
+            <div class="col-3">
                 <h3>Soft computing</h3>
                 <p>
                     Soft Computing is a Digital Services Company specializing in Digital, 
@@ -193,7 +193,7 @@
                
 
             <div class="row">
-            <div class="col-2">
+            <div class="col-2 offset-1">
                 <img src="picture/clic2buy.png" alt="clic2buy.png" class="logo_ent">
             </div>
             <div class="col-4">
@@ -207,10 +207,10 @@
                     More informations...</a>
                 </p>
             </div>         
-            <div class="col-2">
+            <div class="col">
                 <img src="picture/arobas.png" alt="logo_ent1" class="logo_ent">
             </div>
-            <div class="col-4">
+            <div class="col-3">
                 <h3>Arobas Music</h3>
                 <p>
                     Arobas Music manages the development and commercialization of Guitar Pro tablature editing software. 
