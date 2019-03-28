@@ -27,10 +27,10 @@
     <article class="history_euratech">
         <div class="row-3">
             <div class="col-6 offset-2">
-                <h2><span class="subtitle">From wire to fiber</span></h2>
+                <h2><a class="subtitle" href="#fiber">From wire to fiber</a></h2>
             </div>
         </div>
-        <div class="row justify-content">
+        <div class="row justify-content" id="fiber">
             <div class="col-5 offset-1">
                 <div class="history">
                     <p>
@@ -88,10 +88,10 @@
     <section id="ecosystem">
         <div class="row-5">
             <div class="span-2">
-                <h2><span class="subtitle">Euratech's Ecosystem</span></h2>
+                <h2><a class="subtitle" href="#euratech">Euratech's Ecosystem</a></h2>
             </div>
         </div>
-        <div class="row-5">
+        <div class="row-5" id="euratech">
             <div class="span-3 tab">
                 <h4> For more informations on EuraTechnologies's philosophy...</h4>
             </div>   
@@ -121,108 +121,104 @@
 
     <!-- partie entreprises-->
     <section class="our_select">
-    
         <div class="row-5">
             <div class="span-2 offset-5">
-                <h2><span class="subtitle">Our Selection of compagnies</span></h2>
+                <h2><a class="subtitle" href="#selection">Our Selection of compagnies</a></h2>
             </div>
         </div>
+        <div id="selection">
+            <div class="row">
+                <div class="col-2">
+                    <img src="picture/microsoft.png"/>
+                </div>
+                <div class="col-4">
+                    <h3>Microsoft</h3>
+                    <p>
+                        The well known developer of operating systems and software for microcomputers. 
+                        Historical partner of EuraTechnologies
+                    </p>
+                    <p>
+                        <a href="https://www.euratechnologies.com/entreprises/microsoft/" class="intern_link" target="_blank">
+                        More informations...</a>
+                    </p>
+                </div>
+                <div class="col-2">
+                    <img src="picture/capgemini.png" alt="logo_ent" class="logo_ent">
+                </div>
+                <div class="col-4">
+                    <h3>Capgemini</h3>
+                    <p>
+                        First digital services company in France and sixth in the world in 2016, 
+                        it is also one of the historical partners of EuraTechnologies.
+                    </p>
+                    <p>
+                        <a href="https://www.euratechnologies.com/entreprises/capgemini/" class="intern_link" target="_blank">
+                        More informations...</a>
+                    </p>
+                </div>    
+            </div>
 
             <div class="row">
-            <div class="col-2">
-                <img src="picture/microsoft.png"/>
-            </div>
-            <div class="col-4">
-                <h3>Microsoft</h3>
-                <p>
-                    The well known developer of operating systems and software for microcomputers. 
-                    Historical partner of EuraTechnologies
-                </p>
-                <p>
-                    <a href="https://www.euratechnologies.com/entreprises/microsoft/" class="intern_link" target="_blank">
-                    More informations...</a>
-                </p>
-            </div>
-            <div class="col-2">
-                <img src="picture/capgemini.png" alt="logo_ent" class="logo_ent">
-            </div>
-            <div class="col-4">
-                <h3>Capgemini</h3>
-                <p>
-                    First digital services company in France and sixth in the world in 2016, 
-                    it is also one of the historical partners of EuraTechnologies.
-                </p>
-                <p>
-                    <a href="https://www.euratechnologies.com/entreprises/capgemini/" class="intern_link" target="_blank">
-                    More informations...</a>
-                </p>
-            </div>    
-            </div>
-      
+                <div class="col-2">
+                    <img src="picture/ibm.png" alt="logo_ent" class="logo_ent">
+                </div>
+                <div class="col-4">
+                    <h3>IBM</h3>
+                    <p>
+                        IBM Client Innovation Center offers a completely new work environment 
+                        and high-level technical services to its customers.
+                    </p>
+                    <p>
+                        <a href="https://www.euratechnologies.com/entreprises/ibm-services-center/" class="intern_link" target="_blank">
+                        More informations...</a>
+                    </p>
+                </div>
+                <div class="col-2">
+                    <img src="picture/softcomputing.png" alt="logo_ent" class="logo_ent">
+                </div>
+                <div class="col-4">
+                    <h3>Soft computing</h3>
+                    <p>
+                        Soft Computing is a Digital Services Company specializing in Digital, 
+                        Marketing and Big Data.
+                    </p>
+                    <p>
+                        <a href="https://www.euratechnologies.com/entreprises/soft-computing/" class="intern_link" target="_blank">
+                        More informations...</a>
+                    </p>
+                </div>
+            </div>            
 
             <div class="row">
-            <div class="col-2">
-                <img src="picture/ibm.png" alt="logo_ent" class="logo_ent">
+                <div class="col-2">
+                    <img src="picture/clic2buy.png" alt="clic2buy.png" class="logo_ent">
+                </div>
+                <div class="col-4">
+                    <h3>Clic2Buy</h3>
+                    <p>
+                        Clic2Buy transforms communications into merchant media through a call-to-action
+                        on all digital and non-digital brand media.
+                    </p>
+                    <p>
+                        <a href="https://www.euratechnologies.com/entreprises/clic2buy/" class="intern_link" target="_blank">
+                        More informations...</a>
+                    </p>
+                </div>         
+                <div class="col-2">
+                    <img src="picture/arobas.png" alt="logo_ent1" class="logo_ent">
+                </div>
+                <div class="col-4">
+                    <h3>Arobas Music</h3>
+                    <p>
+                        Arobas Music manages the development and commercialization of Guitar Pro tablature editing software.    
+                    </p>
+                    <p>
+                        <a href="https://www.euratechnologies.com/entreprises/arobas-music/" class="intern_link" target="_blank">
+                        More informations...</a>
+                    </p>
+                </div>
             </div>
-            <div class="col-4">
-                <h3>IBM</h3>
-                <p>
-                    IBM Client Innovation Center offers a completely new work environment 
-                    and high-level technical services to its customers.
-                </p>
-                <p>
-                    <a href="https://www.euratechnologies.com/entreprises/ibm-services-center/" class="intern_link" target="_blank">
-                    More informations...</a>
-                </p>
-            </div>
-            <div class="col-2">
-                <img src="picture/softcomputing.png" alt="logo_ent" class="logo_ent">
-            </div>
-            <div class="col-4">
-                <h3>Soft computing</h3>
-                <p>
-                    Soft Computing is a Digital Services Company specializing in Digital, 
-                    Marketing and Big Data.
-                </p>
-                <p>
-                    <a href="https://www.euratechnologies.com/entreprises/soft-computing/" class="intern_link" target="_blank">
-                    More informations...</a>
-                </p>
-            </div>
-            </div>
-               
-
-            <div class="row">
-            <div class="col-2">
-                <img src="picture/clic2buy.png" alt="clic2buy.png" class="logo_ent">
-            </div>
-            <div class="col-4">
-                <h3>Clic2Buy</h3>
-                <p>
-                    Clic2Buy transforms communications into merchant media through a call-to-action
-                    on all digital and non-digital brand media.
-                </p>
-                <p>
-                    <a href="https://www.euratechnologies.com/entreprises/clic2buy/" class="intern_link" target="_blank">
-                    More informations...</a>
-                </p>
-            </div>         
-            <div class="col-2">
-                <img src="picture/arobas.png" alt="logo_ent1" class="logo_ent">
-            </div>
-            <div class="col-4">
-                <h3>Arobas Music</h3>
-                <p>
-                    Arobas Music manages the development and commercialization of Guitar Pro tablature editing software. 
-                    
-                </p>
-                <p>
-                    <a href="https://www.euratechnologies.com/entreprises/arobas-music/" class="intern_link" target="_blank">
-                    More informations...</a>
-                </p>
-            </div>
-            </div>
-                                   
+        </div>                              
     </section>
 <!--                                
 ____  ____  __  ______     __   _    ___    __    __    _______    _   ______________   __   __   __
@@ -237,10 +233,10 @@ ____  ____  __  ______     __   _    ___    __    __    _______    _   _________
     <div class="row">
         <div class="col-10 offset-3">
             <div class="map_faci">
-                <h2><span class="subtitle">Facilities and transports services</span></h2>
+                <h2><a class="subtitle" href="#transport">Facilities and transports services</a></h2>
             </div>
         </div>
-        <div class="col">
+        <div class="col" id="transport">
             <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3009.199000220373!2d3.073400360151567!3d50.637804118913074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srestaurants+%C3%A0+proximit%C3%A9+de+Euralille%2C+Lille!5e0!3m2!1sfr!2sfr!4v1551778190343" width="600" height="500" frameborder="0" allowfullscreen></iframe> 
         </div>
         <div class="col-4">

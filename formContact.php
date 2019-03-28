@@ -123,7 +123,7 @@ require 'header.php';
                                   <!-- CONTACT US HERE -->
     <div class="row">
         <div class="col-6 offset-5">
-            <h2><span class="subtitle">HEY !</span></h2>
+            <h2><a class="subtitle" href="#contact">HEY!</a></h2>
         </div>
     </div>
     <div class="row">
@@ -137,7 +137,7 @@ require 'header.php';
             </p>
         </div>
     </div>
-    <div class="contact">           <!-- LISTE DEROULANTE JE SUIS... -->
+    <div class="contact" id="contact">           <!-- LISTE DEROULANTE JE SUIS... -->
         <form action="formContact.php" method="post" id="contactPost" class="contactPost">
             <div class="row">
                 <div class="col-9 offset-1">
@@ -204,7 +204,7 @@ require 'header.php';
     </div>
     <div class="row titrenews">
           <div class="col-6 offset-4">
-          <a class="subtitle" href="#newsletter">SIGN UP TO OUR NEWSLETTER !</a>
+         <h2><a class="subtitle" href="#newsletter">SIGN UP TO OUR NEWSLETTER !</a></h2>
           </div>
       </div>                            <!-- NEWSLETTER HERE --> 
     <div class="changeIMG">
