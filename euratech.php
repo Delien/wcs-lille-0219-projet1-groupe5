@@ -128,8 +128,8 @@
             </div>
         </div>
 
-        
-            <div class="col-3">
+            <div class="row">
+            <div class="col-2">
                 <img src="picture/microsoft.png"/>
             </div>
             <div class="col-4">
@@ -143,10 +143,7 @@
                     More informations...</a>
                 </p>
             </div>
-          
-
-       
-            <div class="col-3 offset-1">
+            <div class="col-2">
                 <img src="picture/capgemini.png" alt="logo_ent" class="logo_ent">
             </div>
             <div class="col-4">
@@ -159,11 +156,12 @@
                     <a href="https://www.euratechnologies.com/entreprises/capgemini/" class="intern_link" target="_blank">
                     More informations...</a>
                 </p>
+            </div>    
             </div>
       
 
-     
-            <div class="col-3">
+            <div class="row">
+            <div class="col-2">
                 <img src="picture/ibm.png" alt="logo_ent" class="logo_ent">
             </div>
             <div class="col-4">
@@ -177,9 +175,7 @@
                     More informations...</a>
                 </p>
             </div>
-     
-
-            <div class="col-3 offset-1">
+            <div class="col-2">
                 <img src="picture/softcomputing.png" alt="logo_ent" class="logo_ent">
             </div>
             <div class="col-4">
@@ -193,10 +189,11 @@
                     More informations...</a>
                 </p>
             </div>
+            </div>
                
 
-       
-            <div class="col-3">
+            <div class="row">
+            <div class="col-2">
                 <img src="picture/clic2buy.png" alt="clic2buy.png" class="logo_ent">
             </div>
             <div class="col-4">
@@ -209,9 +206,8 @@
                     <a href="https://www.euratechnologies.com/entreprises/clic2buy/" class="intern_link" target="_blank">
                     More informations...</a>
                 </p>
-            </div>
-                     
-            <div class="col-3 offset-1">
+            </div>         
+            <div class="col-2">
                 <img src="picture/arobas.png" alt="logo_ent1" class="logo_ent">
             </div>
             <div class="col-4">
@@ -224,6 +220,7 @@
                     <a href="https://www.euratechnologies.com/entreprises/arobas-music/" class="intern_link" target="_blank">
                     More informations...</a>
                 </p>
+            </div>
             </div>
                                    
     </section>

@@ -134,8 +134,18 @@ h5 {
 	font-size: 2em;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a :hover {
+    text-decoration: none;
+    color: black;
+}
+
 .roundedImage {
-    overflow:hidden;
+    
     -webkit-border-radius:90px;
     -moz-border-radius:90px;
     border-radius:90px;
@@ -149,8 +159,14 @@ h5 {
 .photo {
 	display: inline-block;
 	padding-left: 8%;
+    text-decoration: none;
+    color: black;
 }
 
+.photo:hover {
+    text-decoration: none;
+    color: black;
+}
 
 .text {
   position: center;

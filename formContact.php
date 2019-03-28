@@ -99,51 +99,15 @@ require 'header.php';
     Your contact message is done !
     </div>
     <?php endif; ?>
-    <div class="changeIMG">
-        <div class="row">
-            <div class="span offset-4">
-                <h6 class="newletter_title">Sign up to our Newsletter !</h6>
-            </div>
-        </div>
-        <form action="formContact.php" method="post" id="newletter" class="newletter">
-            <div class="row">
-                <div class="col-9 offset-1">
-                    <input type="text" id="nameNew" name="nameNew" class="name" placeholder="Name :" size="70" maxlength="30"/>
-                    <?php  if(isset($errorsNews['emptyName'])) : ?>
-                    <p class="form-text error"><?= $errorsNews['emptyName']; ?></p>
-                    <?php endif; ?>
-                    <?php  if(isset($errorsNews['incorrectName'])) : ?>
-                    <p class="form-text error"><?= $errorsNews['incorrectName']; ?></p>
-                    <?php endif; ?>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-9 offset-1">
-                    <input type="text" id="mailNew" name="mailNew" class="mail_new" placeholder="Mail :" size="70" maxlength="30" />
-                    <?php  if(isset($errorsNews['emptyMail'])) : ?>
-                    <p class="form-text error"><?= $errorsNews['emptyMail']; ?></p>
-                    <?php endif; ?>
-                    <?php  if(isset($errorsNews['incorrectMail'])) : ?>
-                    <p class="form-text error"><?= $errorsNews['incorrectMail']; ?></p>
-                    <?php endif; ?>
-                </div>
-            </div>    
-            <div class="row">
-                <div class="col-3 offset-9">
-                    <input type="submit" class="send_newsletter" value="SEND"/>
-                </div>
-            </div>
-        </form>
-    </div>
+        <!-- CONTACT US HERE -->
     <div class="row">
         <div class="col-6 offset-5">
-            <h2><span class="subtitle">Contact Us</span></h2>
+            <h2><span class="subtitle">HEY !</span></h2>
         </div>
     </div>
     <div class="row">
         <div class="col-9 offset-1"> 
             <p class="paragraph">
-            <span class="bold">HEY !</span><br>
             Do you want us to meet?
             Would you like to share your incredible talents and join one of our companies?
             Would you like to learn the trade and do an internship with us?
@@ -194,5 +158,42 @@ require 'header.php';
             </div>
         </form>
     </div>
-
+      <!-- NEWSLETTER HERE --> 
+    <div class="changeIMG">
+      <div class="row">
+          <div class="col-6 offset-5">
+          <a class="subtitle" href="#newsletter">SIGN UP TO OUR NEWSLETTER !</a>
+          </div>
+      </div>
+        <form action="formContact.php" method="post" id="newletter" class="newletter">
+            <div class="row" id="newsletter">
+                <div class="col-9 offset-1">
+                    <input type="text" id="nameNew" name="nameNew" class="name" placeholder="Name :" size="70" maxlength="30"/>
+                    <?php  if(isset($errorsNews['emptyName'])) : ?>
+                    <p class="form-text error"><?= $errorsNews['emptyName']; ?></p>
+                    <?php endif; ?>
+                    <?php  if(isset($errorsNews['incorrectName'])) : ?>
+                    <p class="form-text error"><?= $errorsNews['incorrectName']; ?></p>
+                    <?php endif; ?>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-9 offset-1">
+                    <input type="text" id="mailNew" name="mailNew" class="mail_new" placeholder="Mail :" size="70" maxlength="30" />
+                    <?php  if(isset($errorsNews['emptyMail'])) : ?>
+                    <p class="form-text error"><?= $errorsNews['emptyMail']; ?></p>
+                    <?php endif; ?>
+                    <?php  if(isset($errorsNews['incorrectMail'])) : ?>
+                    <p class="form-text error"><?= $errorsNews['incorrectMail']; ?></p>
+                    <?php endif; ?>
+                </div>
+            </div>    
+            <div class="row">
+                <div class="col-3 offset-9">
+                    <input type="submit" class="send_newsletter" value="SEND"/>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- FOOTER HERE -->
 <?php require 'footer.php'; ?>
