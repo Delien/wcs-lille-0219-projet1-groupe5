@@ -66,7 +66,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 require 'header.php'; 
 ?>
-<div class="container ">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -195,5 +194,5 @@ require 'header.php';
             </div>
         </form>
     </div>
-</div>
+
 <?php require 'footer.php'; ?>
