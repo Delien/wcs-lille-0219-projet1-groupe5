@@ -49,7 +49,6 @@
                 <a class="subtitle" href="#companies">WHERE ? WHEN ? WHO ?</a>
             </div>
         </div>        
-
         <div class = "row">       
             <div class="col-2">  
                 <img src="picture/logoEnv/logo-blanchemaille.png" alt="logo blanchemaille"> 

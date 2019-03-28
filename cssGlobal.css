@@ -327,3 +327,10 @@ Partie map
 .dark a {
     color : yellow ;
 }
+.arrowup {
+    height: 4rem;
+    width: 4rem;
+    position: fixed;
+    bottom: 10px;
+    right: 60px;
+}

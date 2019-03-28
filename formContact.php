@@ -3,7 +3,8 @@
 function testInput($input) {
   return htmlspecialchars($input);
 } 
-
+                                //PARTIE NEWSLETTER
+                                
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
   if($_POST['nameNew'] && $_POST['mailNew']) {
     $errorsNews = [];
@@ -16,7 +17,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     } else {
       $patternName = '/^[A-Z][\p{L}-]*$/';
       if(!preg_match($patternName,$nameNew)) {
-        $errorsNews['incorrectName'] = 'Incorrect name';
+        $errorsNews['incorrectName'] = 'Error need uppercase, for exemple : Dupont';
       }
     }
 
@@ -34,14 +35,34 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       exit;
     }
   } else {
-    $errorsContact = [];
+    $errorsContact = [];            //PARTIE CONTACT
 
     $choiceContact = testInput($_POST['choixContact']);
+    $firstNameContact = testInput($_POST['firstNameContact']);
+    $lastNameContact = testInput($_POST['lastNameContact']);
     $mailContact = testInput($_POST['mailContact']);
     $messageContact = testInput($_POST['messageContact']);
 
     if($choiceContact == 'I am ...') {
       $errorsContact['emptychoice'] = 'This field can not be empty';
+    }
+
+    if(empty($firstNameContact)) {
+      $errorsContact['emptyFirstName'] = 'This field can not be empty';
+    } else {
+      $patternName = '/^[A-Z][\p{L}-]*$/';
+      if(!preg_match($patternName,$firstNameContact)) {
+        $errorsContact['incorrectFirstName'] = 'Error need uppercase, for exemple : Dupont';
+      }
+    }
+
+    if(empty($lastNameContact)) {
+      $errorsContact['emptyLastName'] = 'This field can not be empty';
+    } else {
+      $patternName = '/^[A-Z][\p{L}-]*$/';
+      if(!preg_match($patternName,$lastNameContact)) {
+        $errorsContact['incorrectLastName'] = 'Error need uppercase, for exemple : Bernard';
+      }
     }
 
     if(empty($mailContact)) {
@@ -64,7 +85,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
   }
 }
 
-require 'header.php'; 
+require 'header.php';
 ?>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -99,7 +120,7 @@ require 'header.php';
     Your contact message is done !
     </div>
     <?php endif; ?>
-        <!-- CONTACT US HERE -->
+                                  <!-- CONTACT US HERE -->
     <div class="row">
         <div class="col-6 offset-5">
             <h2><span class="subtitle">HEY !</span></h2>
@@ -116,7 +137,7 @@ require 'header.php';
             </p>
         </div>
     </div>
-    <div class="contact">
+    <div class="contact">           <!-- LISTE DEROULANTE JE SUIS... -->
         <form action="formContact.php" method="post" id="contactPost" class="contactPost">
             <div class="row">
                 <div class="col-9 offset-1">
@@ -132,8 +153,31 @@ require 'header.php';
                     <?php endif; ?>
                 </div>
             </div>
+                                  <!-- CHAMPS MAIL/MESSAGE/NOM/PRENOM/ -->
             <div class="row">
                 <div class="col-9 offset-1">
+                  <input type="text" name="firstNameContact" id="firstNameContact" class="firstNameContact" placeholder="Fisrt name :" size="70" maxlength="30" />
+                  <?php if (isset($errorsContact['emptyFirstName'])) : ?>
+                  <p class="form-text error"><?= $errorsContact['emptyFirstName']; ?></p>
+                  <?php endif; ?>
+                  <?php if (isset($errorsContact['incorrectFirstName'])) : ?>
+                  <p class="form-text error"><?= $errorsContact['incorrectFirstName']; ?></p>
+                  <?php endif; ?>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-9 offset-1">
+                  <input type="text" name="lastNameContact" id="lastNameContact" class="lastNameContact" placeholder="Last name :" size="70" maxlength="30" />
+                  <?php if (isset($errorsContact['emptyLastName'])) : ?>
+                  <p class="form-text error"><?= $errorsContact['emptyLastName']; ?></p>
+                  <?php endif; ?>
+                  <?php if (isset($errorsContact['incorrectLastName'])) : ?>
+                  <p class="form-text error"><?= $errorsContact['incorrectLastName']; ?></p>
+                  <?php endif; ?>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-9 offset-1"> 
                     <input type="text" id="mailContact" name="mailContact" class="mail_contact" placeholder="@ :" size="70" maxlength="30" />
                     <?php  if(isset($errorsContact['emptyMail'])) : ?>
                     <p class="form-text error"><?= $errorsContact['emptyMail']; ?></p>
@@ -158,7 +202,7 @@ require 'header.php';
             </div>
         </form>
     </div>
-      <!-- NEWSLETTER HERE --> 
+                                      <!-- NEWSLETTER HERE --> 
     <div class="changeIMG">
       <div class="row">
           <div class="col-6 offset-5">

@@ -12,5 +12,6 @@
 <body>
 <button class="btn" id="darkTrigger"> </button>
 <p> <span class="theme"> change the theme </span> </p>
+<img src ="picture/fleche.png" class='arrowup' alt = "fleche_du_haut"/>
 <div class="container"> 
     <h1 class="site_title"> <img src ="picture/logowildJ.png" alt = "wild logo" /> WILD - Wild Information of the digital in Lille </h1>
