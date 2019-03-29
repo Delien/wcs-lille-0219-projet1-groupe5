@@ -348,18 +348,6 @@ Partie map
     right: 60px;
 }
 
-.logo {
-    height : 3rem;
-    width : 3rem ;
-    background-image : url("picture/logowildJ.png");
-    background-size: contain;
-    background-repeat : no-repeat;
-}
-
-.dark .logo {
-    background-image: url('picture/logowildN.png')
-}
-
 .photo a {
     color : black ;
 }
