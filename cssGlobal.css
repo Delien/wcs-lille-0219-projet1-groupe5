@@ -348,13 +348,13 @@ Partie map
     right: 60px;
 }
 
-img #haut {
+.logo {
     background-image: url ('picture/logowildJ.png');
     width : 100%;
     height : 100%;
 }
 
-.dark img #haut {
+.dark .logo {
     background-image: url('picture/logowildN.png')
 }
 
@@ -363,5 +363,5 @@ img #haut {
 }
 
 .dark .photo a {
-    color : yellow;
+    color : white;
 }
