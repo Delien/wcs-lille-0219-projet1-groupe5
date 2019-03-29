@@ -67,19 +67,19 @@
       </div> 
       <div class="containerphoto" id="club">
          <div class="photo">
-            <a href="https://www.linkedin.com/in/nathan-mrc/" target="_blank" style="color:black;" ><img class="roundedImage nathan" src="picture/nathan.png"  /><br/> 
+            <a href="https://www.linkedin.com/in/nathan-mrc/" target="_blank" ><img class="roundedImage nathan" src="picture/nathan.png"  /><br/> 
                <span> NATHAN / 26 years <br/>JS Specialist</span><br/> 
          </div>
-         <div class="photo"><a href="https://www.linkedin.com/in/louis-allard-58212b10b/" target="_blank" style="color:black;"><img class="roundedImage" class="nathan" src="picture/moi.png" /> <br/> <span> LOUIS / 37 years <br/>DCS Expert</span> <br/> </div>
+         <div class="photo"><a href="https://www.linkedin.com/in/louis-allard-58212b10b/" target="_blank"><img class="roundedImage" class="nathan" src="picture/moi.png" /> <br/> <span> LOUIS / 37 years <br/>DCS Expert</span> <br/> </div>
          
-         <div class="photo"><a href="https://www.linkedin.com/feed/?trk=hb_signin" target="_blank" style="color:black;"><img class="roundedImage" class="nathan" src="picture/emilie.png" /> <br/> <span> EMILIE / 23 years <br/>Design Specialist</span> <br/> </div>
+         <div class="photo"><a href="https://www.linkedin.com/feed/?trk=hb_signin" target="_blank"><img class="roundedImage" class="nathan" src="picture/emilie.png" /> <br/> <span> EMILIE / 23 years <br/>Design Specialist</span> <br/> </div>
       </div>   
       
       <div class="containerphoto" >
          
-         <div class="photo"><a href="https://www.linkedin.com/in/dorine-lombardo-141034123/" target="_blank" style="color:black;"><img class="roundedImage" class="nathan" src="picture/dorine.png" /> <br/> <span> DORINE / 22 years <br/>Informatique Specialist</span> <br/> </div>
+         <div class="photo"><a href="https://www.linkedin.com/in/dorine-lombardo-141034123/" target="_blank"><img class="roundedImage" class="nathan" src="picture/dorine.png" /> <br/> <span> DORINE / 22 years <br/>Informatique Specialist</span> <br/> </div>
          
-         <div class="photo"><a href="https://github.com/Edo21-10" target="_blank" style="color:black;"><img class="roundedImage" class="nathan" src="picture/simon.png" /> <br/> <span> SIMON / 25 years <br/>PHP Spécialist</span> <br/> </div>  
+         <div class="photo"><a href="https://github.com/Edo21-10" target="_blank"><img class="roundedImage" class="nathan" src="picture/simon.png" /> <br/> <span> SIMON / 25 years <br/>PHP Spécialist</span> <br/> </div>  
       </div>  
    </section>
 <?php require 'footer.php'; ?>
