@@ -128,10 +128,10 @@
         </div>
         <div id="selection">
             <div class="row">
-                <div class="col-2">
+                <div class="col-2 offset-1">
                     <img src="picture/microsoft.png"/>
                 </div>
-                <div class="col-4">
+                <div class="col-3">
                     <h3>Microsoft</h3>
                     <p>
                         The well known developer of operating systems and software for microcomputers. 
@@ -159,10 +159,10 @@
             </div>
 
             <div class="row">
-                <div class="col-2">
+                <div class="col-2 offset-1">
                     <img src="picture/ibm.png" alt="logo_ent" class="logo_ent">
                 </div>
-                <div class="col-4">
+                <div class="col-3">
                     <h3>IBM</h3>
                     <p>
                         IBM Client Innovation Center offers a completely new work environment 
@@ -190,10 +190,10 @@
             </div>            
 
             <div class="row">
-                <div class="col-2">
+                <div class="col-2 offset-1">
                     <img src="picture/clic2buy.png" alt="clic2buy.png" class="logo_ent">
                 </div>
-                <div class="col-4">
+                <div class="col-3">
                     <h3>Clic2Buy</h3>
                     <p>
                         Clic2Buy transforms communications into merchant media through a call-to-action
