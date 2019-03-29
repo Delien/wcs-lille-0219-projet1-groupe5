@@ -16,11 +16,11 @@
                     <a href="annex.php">Annex</a>
                     </h6>
                 </div>
-                <div class="col-md-2 mb-3">
+                <!--<div class="col-md-2 mb-3">
                     <h6 class="text-uppercase font-weight-bold">
                     <a href="#!">Help</a>
                     </h6>
-                </div>
+                </div>-->
                 <div class="col-md-2 mb-3">
                     <h6 class="text-uppercase font-weight-bold">
                     <a href="formContact.php">Contact</a>
