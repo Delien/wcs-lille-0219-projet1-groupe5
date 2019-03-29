@@ -9,27 +9,30 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
   if($_POST['nameNew'] && $_POST['mailNew']) {
     $errorsNews = [];
 
-    $nameNew = testInput($_POST['nameNew']);
-    $mailNew = testInput($_POST['mailNew']);
-
-    if(empty($nameNew)) {
-      $errorsNews['emptyName'] = 'This field can not be empty';
-    } else {
-      $patternName = '/^[A-Z][\p{L}-]*$/';
-      if(!preg_match($patternName,$nameNew)) {
-        $errorsNews['incorrectName'] = 'Error need uppercase, for exemple : Dupont';
+    if(isset($_POST['nameNew'])) {
+      $nameNew = testInput($_POST['nameNew']);
+      if(empty($nameNew)) {
+        $errorsNews['emptyName'] = 'This field can not be empty';
+      } else {
+        $patternName = '/^[A-Z][\p{L}-]*$/';
+        if(!preg_match($patternName,$nameNew)) {
+          $errorsNews['incorrectName'] = 'Error need uppercase, for exemple : Dupont';
+        }
       }
     }
-
-    if(empty($mailNew)) {
-      $errorsNews['emptyMail'] = 'This field can not be empty';
-    } else {
-      $patternMail = '/^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,}$/';
-      if(!preg_match($patternMail,$mailNew)) {
-        $errorsNews['incorrectMail'] = 'Incorrect email adrress';
+    
+    if(isset($_POST['mailNew'])) {
+      $mailNew = testInput($_POST['mailNew']);
+      if(empty($mailNew)) {
+        $errorsNews['emptyMail'] = 'This field can not be empty';
+      } else {
+        $patternMail = '/^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,}$/';
+        if(!preg_match($patternMail,$mailNew)) {
+          $errorsNews['incorrectMail'] = 'Incorrect email adrress';
+        }
       }
     }
-
+    
     if(count($errorsNews) == 0) {
       header('location: formContact.php?new_success');
       exit;
@@ -37,46 +40,55 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
   } else {
     $errorsContact = [];            //PARTIE CONTACT
 
-    $choiceContact = testInput($_POST['choixContact']);
-    $firstNameContact = testInput($_POST['firstNameContact']);
-    $lastNameContact = testInput($_POST['lastNameContact']);
-    $mailContact = testInput($_POST['mailContact']);
-    $messageContact = testInput($_POST['messageContact']);
-
-    if($choiceContact == 'I am ...') {
-      $errorsContact['emptychoice'] = 'This field can not be empty';
-    }
-
-    if(empty($firstNameContact)) {
-      $errorsContact['emptyFirstName'] = 'This field can not be empty';
-    } else {
-      $patternName = '/^[A-Z][\p{L}-]*$/';
-      if(!preg_match($patternName,$firstNameContact)) {
-        $errorsContact['incorrectFirstName'] = 'Error need uppercase, for exemple : Dupont';
+    if(isset($_POST['choixContact'])){
+      $choiceContact = testInput($_POST['choixContact']);
+      if($choiceContact == 'I am ...') {
+        $errorsContact['emptychoice'] = 'This field can not be empty';
       }
     }
 
-    if(empty($lastNameContact)) {
-      $errorsContact['emptyLastName'] = 'This field can not be empty';
-    } else {
-      $patternName = '/^[A-Z][\p{L}-]*$/';
-      if(!preg_match($patternName,$lastNameContact)) {
-        $errorsContact['incorrectLastName'] = 'Error need uppercase, for exemple : Bernard';
+    if(isset($_POST['firstNameContact'])){
+      $firstNameContact = testInput($_POST['firstNameContact']);
+      if(empty($firstNameContact)) {
+        $errorsContact['emptyFirstName'] = 'This field can not be empty';
+      } else {
+        $patternName = '/^[A-Z][\p{L}-]*$/';
+        if(!preg_match($patternName,$firstNameContact)) {
+          $errorsContact['incorrectFirstName'] = 'Error need uppercase, for exemple : Dupont';
+        }
       }
     }
 
-    if(empty($mailContact)) {
-      $errorsContact['emptyMail'] = 'This field can not be empty';
-    } else {
-      $patternMail = '/^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,}$/';
-      if(!preg_match($patternMail,$mailContact)) {
-        $errorsContact['incorrectMail'] = 'Incorrect email adrress';
+    if(isset($_POST['lastNameContact'])){
+      $lastNameContact = testInput($_POST['lastNameContact']);
+      if(empty($lastNameContact)) {
+        $errorsContact['emptyLastName'] = 'This field can not be empty';
+      } else {
+        $patternName = '/^[A-Z][\p{L}-]*$/';
+        if(!preg_match($patternName,$lastNameContact)) {
+          $errorsContact['incorrectLastName'] = 'Error need uppercase, for exemple : Bernard';
+        }
       }
     }
 
-    if(empty($messageContact)) {
-      $errorsContact['emptyMessage'] = 'This field can not be empty';
+    if(isset($_POST['mailContact'])){
+      $mailContact = testInput($_POST['mailContact']);
+      if(empty($mailContact)) {
+        $errorsContact['emptyMail'] = 'This field can not be empty';
+      } else {
+        $patternMail = '/^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,}$/';
+        if(!preg_match($patternMail,$mailContact)) {
+          $errorsContact['incorrectMail'] = 'Incorrect email adrress';
+        }
+      }
     }
+
+    if(isset($_POST['messageContact'])){
+      $messageContact = testInput($_POST['messageContact']);
+      if(empty($messageContact)) {
+        $errorsContact['emptyMessage'] = 'This field can not be empty';
+      }
+    } 
 
     if(count($errorsContact) == 0) {
       header('location: formContact.php?mail_success');
