@@ -6,9 +6,9 @@ const darkbutton = () => {
     $("body").toggleClass("dark")
     $( "div.container" ).toggleClass( "dark" );
     $("span.subtitle").toggleClass("dark");
-    let src = ($('#logosite').attr('src') === 'logowildJ.png')    
-? 'logowildN.png'
-: 'logowildJ.png';
+    let src = ($('#logosite').attr('src') === 'picture/logowildJ.png')    
+? 'picture/logowildN.png'
+: 'picture/logowildJ.png';
 $('#logosite').attr('src', src)
 }
 
