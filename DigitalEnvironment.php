@@ -51,7 +51,7 @@
         </div>
         <div id="where">     
             <div class="row">       
-                <div class="col-2">  
+                <div class="col-2 offset-1">  
                     <img src="picture/logoEnv/logo-blanchemaille.png" alt="logo blanchemaille"> 
                 </div>
                 <div id="companies" class="col-3">
@@ -64,7 +64,7 @@
                     <p>Adrress : 87 rue du Fontenoy 59100 Roubaix</p>
                     <a href="https://blanchemaille-euratechnologies.com/" target="_blank">More ...</a>
                 </div>
-                <div class="col">
+                <div class="col-2">
                     <img src="picture/logoEnv/logo-plaineimage.png" alt="logo plaine images">
                 </div>
                 <div class="col-3">
@@ -79,7 +79,7 @@
                 </div>
 
             <div class="row">
-                <div class="col-2">
+                <div class="col-2 offset-1">
                     <img src="picture/logoEnv/logo-rucheentreprise.png" alt="logo ruche entreprise">
                 </div>
                 <div class="col-3">
@@ -91,7 +91,7 @@
                     </p>
                     <a href="https://www.lillemetropole.fr/fr/ruches-dentreprises" target="_blank">More ...</a>
                 </div>    
-                <div class="col">
+                <div class="col-2">
                     <img src="picture/logoEnv/logo-creinnov.png" alt="logo creinnov" target="_blank">
                 </div>
                 <div class="col-3">
