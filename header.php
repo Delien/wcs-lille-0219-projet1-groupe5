@@ -14,4 +14,4 @@
 <p> <span class="theme"> CHANCE THE THEME </span> </p>
 <a href="#haut"><img src ="picture/fleche.png" class='arrowup' alt = "fleche_du_haut"/></a>
 <div class="container"> 
-    <h1 class="site_title" id="haut"><div class="logo"></div> WILD - Wild Information of the digital in Lille </h1>
+    <h1 class="site_title" id="haut"><div class="logohead"></div> WILD - Wild Information of the digital in Lille </h1>

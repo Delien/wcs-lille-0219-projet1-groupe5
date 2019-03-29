@@ -349,9 +349,11 @@ Partie map
 }
 
 .logo {
-    background-image: url ('picture/logowildJ.png');
-    width : 100%;
-    height : 100%;
+    height : 3rem;
+    width : 3rem ;
+    background-image : url("picture/logowildJ.png");
+    background-size: contain;
+    background-repeat : no-repeat;
 }
 
 .dark .logo {
