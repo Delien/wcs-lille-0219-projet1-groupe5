@@ -94,33 +94,6 @@
             <div class="col">
                 <img src="picture/logoEnv/logo-creinnov.png" alt="logo creinnov" target="_blank">
             </div>
-            <div class="row">
-                <div class="col-2">
-                    <img src="picture/logoEnv/logo-rucheentreprise.png" alt="logo ruche entreprise">
-                </div>
-                <div class="col-4">
-                    <h3>Ruche d'entreprise</h3>
-                    <p>
-                        Corporate hives welcome companies in creation and evolution.
-                        There are companies with diverse and various projects. 
-                        In Lille metropolis there are 4 hives located in Hellemmes, Villeneuve d'Ascq, Tourcoing and Armentieres.
-                    </p>
-                    <a href="https://www.lillemetropole.fr/fr/ruches-dentreprises" target="_blank"></a>
-                </div>    
-                <div class="col-2">
-                    <img src="picture/logoEnv/logo-creinnov.png" alt="logo creinnov" target="_blank">
-                </div>
-                <div class="col-4">
-                    <h3>Cre'innov</h3>
-                    <p>
-                        Cre'innov is an incubator in relation with the University of Lille.
-                        The business district of Villeneuve d'Asq is located close to all its businesses as well as the corporate hive.
-                    </p>
-                    <p>Adrress : 11 rue de l’Harmonie 59650 Villeneuve d’ascq</p>
-                    <a href="http://cre-innov.univ-lille1.fr/Presentation/" target="_blank"></a>
-                </div>    
-            </div>
-
             <div class="col-3 offset-4">
                 <img src="picture/logoEnv/logo-serrenumerique.png" alt="logo serre numerique">
             </div>
