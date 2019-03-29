@@ -6,7 +6,7 @@ function testInput($input) {
                                 //PARTIE NEWSLETTER
                                 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
-  if($_POST['nameNew'] && $_POST['mailNew']) {
+  if(isset($_POST['nameNew']) && isset($_POST['mailNew'])) {
     $errorsNews = [];
 
     if(isset($_POST['nameNew'])) {
