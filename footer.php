@@ -31,6 +31,7 @@
             <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">   
         </div>
         <div class="footer-copyright text-center py-3">© 2018 Copyright: The club 5!</div>
+        <div> Made with &#x2764;&#xFE0F; by Wild Code School</div>
     </footer>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
