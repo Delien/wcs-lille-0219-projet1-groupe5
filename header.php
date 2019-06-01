@@ -10,8 +10,8 @@
     <title>W.I.L.D. - wild information of the digital in Lille</title>
 </head>
 <body>
+<a href="#haut" id="haut"><img src ="picture/fleche.png" class='arrowup' alt = "fleche_du_haut"/></a>
 <button class="btn" id="darkTrigger"> </button>
 <p> <span class="theme"> CHANGE THE THEME </span> </p>
-<a href="#haut"><img src ="picture/fleche.png" class='arrowup' alt = "fleche_du_haut"/></a>
 <div class="container"> 
-    <h1 class="site_title" id="haut"> <img id="logosite" src ="picture/logowildJ.png" alt = "wild logo" /> WILD - Wild Information of the digital in Lille </h1>
+    <h1 class="site_title"> <img id="logosite" src ="picture/logowildJ.png" alt = "wild logo" /> WILD - Wild Information of the digital in Lille </h1>
