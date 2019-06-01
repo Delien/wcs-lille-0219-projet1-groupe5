@@ -62,7 +62,7 @@
                         The e-commerce companies extend over 13000m² with a school of trade.
                     </p>
                     <p>Adrress : 87 rue du Fontenoy 59100 Roubaix</p>
-                    <a href="https://blanchemaille-euratechnologies.com/" target="_blank">More ...</a>
+                    <a href="https://blanchemaille-euratechnologies.com/" target="_blank" class="intern_link">More ...</a>
                 </div>
                 <div class="col-2">
                     <img src="picture/logoEnv/logo-plaineimage.png" alt="logo plaine images">
@@ -75,7 +75,7 @@
                         There are 125 companies on 40 000m² with 3 schools.
                     </p>
                     <p>Adrress : 99 A boulevard Constantin Descat 59200 Tourcoing</p>
-                    <a href="https://www.plaine-images.fr/" target="_blank">More ...</a>
+                    <a href="https://www.plaine-images.fr/" target="_blank" class="intern_link">More ...</a>
                 </div>
 
             <div class="row">
@@ -89,7 +89,7 @@
                         There are companies with diverse and various projects. 
                         In Lille metropolis there are 4 hives located in Hellemmes, Villeneuve d'Ascq, Tourcoing and Armentieres.
                     </p>
-                    <a href="https://www.lillemetropole.fr/fr/ruches-dentreprises" target="_blank">More ...</a>
+                    <a href="https://www.lillemetropole.fr/fr/ruches-dentreprises" target="_blank" class="intern_link">More ...</a>
                 </div>    
                 <div class="col-2">
                     <img src="picture/logoEnv/logo-creinnov.png" alt="logo creinnov" target="_blank">
@@ -101,7 +101,7 @@
                     The business district of Villeneuve d'Asq is located close to all its businesses as well as the corporate hive.
                     </p>
                     <p>Adrress : 11 rue de l’Harmonie 59650 Villeneuve d’ascq</p>
-                    <a href="http://cre-innov.univ-lille1.fr/Presentation/" target="_blank">More ...</a>
+                    <a href="http://cre-innov.univ-lille1.fr/Presentation/" target="_blank" class="intern_link">More ...</a>
                 </div>
 
             </div>
@@ -115,7 +115,7 @@
                     There are 17,000m² with 3 schools. 
                 </p>
                 <p>Adrress : 2 rue Peclet 59300 Valenciennes</p>
-                <a href="http://www.serre-numerique.fr/" target="_blank">More ...</a>
+                <a href="http://www.serre-numerique.fr/" target="_blank" class="intern_link">More ...</a>
             </div>    
         </div>     
     </section>  
